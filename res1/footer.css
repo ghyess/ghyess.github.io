@@ -1,0 +1,61 @@
+#ft {
+    width: 100%;
+    height: 290px;
+    border: 1px solid #c8c8c8;
+}
+
+#ft #fnb {
+    width: 100%;
+    margin-top: 1%;
+}
+#ft #fnb ul {
+    width: 37%;
+    height: 40px;
+    margin: 0 auto;
+}
+#ft #fnb li {
+    padding-right: 20px;
+    float: left;
+    position: relative;
+}
+#ft #fnb li a {
+    font-size: .95em;
+    color: #424242;
+    text-align: center;
+    font-weight: bold;
+}
+#ft #fnb li a::after {
+    content: '|';
+    position: absolute;
+    right: 8px;
+}
+#ft #fnb li .last::after {
+    content: '';
+}
+
+#ft .address {
+    width: 100%;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    box-sizing: border-box;
+    padding: 1%;
+    padding-left: 11%;
+}
+#ft .address p {
+    line-height: 22px;
+    font-size: .9em;
+    color: #424242;
+    font-weight: bold;
+}
+#ft .address .fas { font-size: 1.25em; }
+
+#ft .copyright {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1%;
+}
+#ft .copy {
+    text-align: center;
+    color: #A4A4A4;
+    font-size: .8em;
+}

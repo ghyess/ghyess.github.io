@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>코스트코 온라인몰|Costco 코리아</title>
+<!--    파비콘     -->
+    <link rel="icon" size="16x16" href="ico/favicon.ico" type="image/x-icon">
+<!--    메타태그 설정     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!--    폰트링크     -->
+    <link href="//fonts.googleapis.com/css?family=Jua|Nanum+Gothic" rel="stylesheet">
+<!--     폰트 어썸     -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+<!--    css      -->
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="hd.css">
+    <link rel="stylesheet" href="visual.css">
+    <link rel="stylesheet" href="cont.css">
+    <link rel="stylesheet" href="footer.css">
+    
+<!--    js      -->
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+           <div class="top">
+                <ul class="snsbox">
+                    <li><a href="" class="sns"><img src="ico/facebook.png" alt=""></a></li>
+                    <li><a href="" class="sns"><img src="ico/ytb.png" alt=""></a></li>
+                    <li><a href="" class="sns sec"><img src="ico/kakao.png" alt=""></a></li>
+                </ul>
+                <a href="" class="logo"><img src="img/logo.png" alt=""></a>
+                <ul class="right_util">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                    <li><a href="">온라인등록</a></li>
+                    <li class="last"><a href=""><i class="fas fa-shopping-cart"></i>&nbsp;쇼핑카트</a></li>
+                </ul>
+            </div>
+        </header>
+        <nav id="gnb">
+            <ul class="menu">
+                <li><a href="">카테고리 전체보기</a>
+                    <ul class="submenu">
+                        <li><a href="">디지털/TV</a></li>
+                        <li><a href="">컴퓨터</a></li>
+                        <li><a href="">대형/생활가전</a></li>
+                        <li><a href="">가구/침구/인테리어</a></li>
+                        <li><a href="">주방/세제</a></li>
+                        <li><a href="">유아동/완구/애완용품</a></li>
+                        <li><a href="">스포츠/헬스/캠핑</a></li>
+                        <li><a href="">파티오/정원/창고</a></li>
+                        <li><a href="">의류/가방/잡화</a></li>
+                        <li><a href="">보석/시계/액세서리</a></li>
+                        <li><a href="">화장품/미용/제지</a></li>
+                        <li><a href="">건강/영양제</a></li>
+                        <li><a href="">공구/생활/자동차</a></li>
+                        <li><a href="">식품</a></li>
+                        <li><a href="">문구/사무/악기</a></li>
+                        <li><a href="">선물세트</a></li>
+                    </ul>
+                </li>
+                <li><a href="">스페셜 할인</a></li>
+                <li><a href="">핫바이</a></li>
+                <li><a href="">신상품</a></li>
+                <li><a href="">커틀랜드 시그니춰</a></li>
+                <li><a href="">정원용품</a></li>
+                <li><a href="">고객센터</a></li>
+                <li><a href="">매장찾기</a></li>
+            </ul>
+        </nav>
+        <figure id="vs">
+            <ul class="imgBox">
+                <li class="imgFrame" data-value="0"><a href=""><img src="img/main0.jpg" alt=""></a></li>
+                <li class="imgFrame" data-value="1"><a href=""><img src="img/main1.jpg" alt=""></a></li>
+                <li class="imgFrame" data-value="2"><a href=""><img src="img/main2.jpg" alt=""></a></li>
+                <li class="imgFrame" data-value="3"><a href=""><img src="img/main3.jpg" alt=""></a></li>
+            </ul>
+            <div class="btn_list">
+                <label for="" class="btn on" data-value="0"></label>
+                <label for="" class="btn" data-value="1"></label>
+                <label for="" class="btn" data-value="2"></label>
+                <label for="" class="btn" data-value="3"></label>
+            </div>
+        </figure>
+        <section class="con" id="con1">
+            <h2 class="conTit">SEASON PRODUCT</h2>
+            <p class="conCom">코스트코 시즌 제품을 지금 만나보세요</p>
+            <div class="btn_box">
+                <label for="" class="pro_btn act" id="fp">Featured Products</label>
+                <label for="" class="pro_btn" id="pick">Buyer's Pick</label>
+                <label for="" class="pro_btn" id="wnew">What's New</label>
+            </div>
+            <div class="btwrap">
+                <label for="" id="prev"></label>
+                <label for="" id="next"></label>
+            </div>
+            <div class="pro_wrap">
+                <ul class="pro_list" id="list1">
+                <li class="product">
+                    <a href=""><img src="img/fp1.jpg" alt="">
+                    <span class="pro_Tit">다우닝 데이브 3.5인용 가죽 소파<br>(스툴 포함)-그레이</span>
+                    <span class="pro_en">Dauning Dave Leather Sofa 3.5 Seater<br>With Stool-Grey</span>
+                    </a>
+                </li>
+                <li class="product">
+                    <a href=""><img src="img/fp2.jpg" alt="">
+                    <span class="pro_Tit">야외용 가스 히터</span>
+                    <span class="pro_en">Outdoor Gas Heater</span>
+                    </a>
+                </li>
+                <li class="product">
+                    <a href=""><img src="img/fp3.jpg" alt="">
+                    <span class="pro_Tit">바디앤풋 전신 웨이브 온열 마사지기</span>
+                    <span class="pro_en">Body&amp;Foot Body Balancing Massager</span>
+                    </a>
+                </li>
+                <li class="product">
+                    <a href=""><img src="img/fp4.jpg" alt="">
+                    <span class="pro_Tit">와이즈넷 보안 카메라 8채널 / <br>4카메라 SDH-B74043BF</span>
+                    <span class="pro_en">Wisenet Security System 8ch/<br>4Cam SDH-B74043BF</span>
+                    </a>
+                </li>
+                <li class="product">
+                    <a href=""><img src="img/fp5.jpg" alt="">
+                    <span class="pro_Tit">블랙앤데커 전기 히터 BXSH1601-A</span>
+                    <span class="pro_en">Black&amp;Decker Electric Heater BXSH1601-A</span>
+                    </a>
+                </li>
+                <li class="product">
+                    <a href=""><img src="img/fp6.jpg" alt="">
+                    <span class="pro_Tit">쌤소나이트 트레드 여향가방 – <br>차콜 (51cm&amp;71cm)</span>
+                    <span class="pro_en">Samsonite Tread Luggage 2P Set – <br>Charcoal(51cm&amp;71cm)</span>
+                    </a>
+                </li>
+                <li class="product">
+                    <a href=""><img src="img/fp7.jpg" alt="">
+                    <span class="pro_Tit">트리바 남녀공용 시계 FAST104-CL10217</span>
+                    <span class="pro_en">Triwa Unisex Watch FAST104-CL10217</span>
+                    </a>
+                </li>
+                <li class="product">
+                    <a href=""><img src="img/fp8.jpg" alt="">
+                    <span class="pro_Tit">릴팡 와이드 폴딩 5단 매트, 140X250X4cm</span>
+                    <span class="pro_en">Lilfant Wide Cream Color Mat 140x250x4cm</span>
+                    </a>
+                </li>
+            </ul>
+                <ul class="pro_list" id="list2">
+                <li class="product"><a href="">
+                    <img src="img/bp1.jpg" alt="">
+                    <span class="pro_Tit">HP 노트북 Spectre x360 13-ae525TU</span>
+                    <span class="pro_en">HP Laptop Spectre x360</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/bp2.jpg" alt="">
+                    <span class="pro_Tit">럭스나인 천연 라텍스 토퍼(10.5cm)-퀸, 베이지</span>
+                    <span class="pro_en">Luxnine Natural Latex Mattress Topper(10.5cm)-Queen, Beige</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/bp3.jpg" alt="">
+                    <span class="pro_Tit">코닥 미니 샷 인스턴트 카메라 +<br>올인원 카트리지 30매</span>
+                    <span class="pro_en">Kodak Mini Shot Instant Camera +<br>Cartridge Set</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/bp4.jpg" alt="">
+                    <span class="pro_Tit">아우디 R8 스파이더 푸쉬카</span>
+                    <span class="pro_en">Audi R8 Spyder Push-Car</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/bp5.jpg" alt="">
+                    <span class="pro_Tit">코알라 트루 오리지널 분유 2단계 900g x 4캔</span>
+                    <span class="pro_en">Cowala True Original Milk Powder 2 Stage 900g x 4</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/bp6.jpg" alt="">
+                    <span class="pro_Tit">블랙앤데커 플랙시 차량용 청소기</span>
+                    <span class="pro_en">Black&amp;Decker Dustbuster Flexi2 Auto Cleaner</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/bp7.jpg" alt="">
+                    <span class="pro_Tit">브이텍 아동용 스마트워치 DX2</span>
+                    <span class="pro_en">V-tech Kidizoom Smartwatch DX2</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/bp8.jpg" alt="">
+                    <span class="pro_Tit">해밀턴비치 커피메이커</span>
+                    <span class="pro_en">Hamilton Beach Coffee Maker</span>
+                </a></li>
+            </ul>
+                <ul class="pro_list" id="list3">
+                <li class="product"><a href="">
+                    <img src="img/wn1.jpg" alt="">
+                    <span class="pro_Tit">미디어 만텔 벽난로형 전기 온풍기</span>
+                    <span class="pro_en">Media Mantel Electric Fireplace</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/wn2.jpg" alt="">
+                    <span class="pro_Tit">다운라이트 구스 다운 이불 – 퀸</span>
+                    <span class="pro_en">Downlite Goose Down Comforter – Queen</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/wn3.jpg" alt="">
+                    <span class="pro_Tit">생딸기 원목 키친 놀이</span>
+                    <span class="pro_en">Strawberry Wooden Deluxe Kitchen</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/wn4.jpg" alt="">
+                    <span class="pro_Tit">페리 엘리스 아동 롱 다운 재킷</span>
+                    <span class="pro_en">Perry Ellis Kids' Long Down Jacket</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/wn5.jpg" alt="">
+                    <span class="pro_Tit">바이오티크 샤프란 데이 수분크림 50g x 2</span>
+                    <span class="pro_en">Biotique Saffron Nourishing Day Cream 50g x 2</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/wn6.jpg" alt="">
+                    <span class="pro_Tit">크리스마스 오너먼트 장식 세트 6-Piece</span>
+                    <span class="pro_en">Christmas Shatterproof Ornament 6-piece</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/wn7.jpg" alt="">
+                    <span class="pro_Tit">크리스마스 장식 오너먼트가 달린 메탈 트리</span>
+                    <span class="pro_en">Metal Tree with 12-piece Glass Ornaments</span>
+                </a></li>
+                <li class="product"><a href="">
+                    <img src="img/wn8.jpg" alt="">
+                    <span class="pro_Tit">엔젯오리진 알래스카 RTG 오메가3<br>1200mg X 90캡슐</span>
+                    <span class="pro_en">NZ Origin Alaska rTG Omega 3 1200mg x 90ct</span>
+                </a></li>
+            </ul>
+            </div>
+        </section>
+        <section class="con" id="con2">
+            <h2 class="conTit">SEASON SPECIAL</h2>
+            <div class="season">
+                <a href="" class="item">
+                    <div class="thumb_box"><img src="img/g1.jpg" alt=""></div>
+                    <div class="txt_box">
+                        <p class="sTit">가을대청소</p>
+                    </div>
+                </a>
+                <a href="" class="item">
+                    <div class="thumb_box"><img src="img/g2.jpg" alt=""></div>
+                    <div class="txt_box">
+                        <p class="sTit">독서의 계절</p>
+                    </div>
+                </a>
+                <a href="" class="item">
+                    <div class="thumb_box"><img src="img/g3.jpg" alt=""></div>
+                    <div class="txt_box">
+                        <p class="sTit">등산 시즌</p>
+                    </div>
+                </a>
+                <a href="" class="item">
+                    <div class="thumb_box"><img src="img/g4.jpg" alt=""></div>
+                    <div class="txt_box">
+                        <p class="sTit">수능대비 체력충전</p>
+                    </div>
+                </a>
+            </div>
+            <div class="season bt">
+                <a href="" class="item small">
+                    <div class="thumb_box"><img src="img/g5.jpg" alt=""></div>
+                    <div class="txt_box">
+                        <p class="sTit">스페셜 가격 오퍼</p>
+                    </div>
+                </a>
+                <a href="" class="item small">
+                    <div class="thumb_box"><img src="img/g6.jpg" alt=""></div>
+                    <div class="txt_box">
+                        <p class="sTit">금주 핫바이</p>
+                    </div>
+                </a>
+                <a href="" class="item small">
+                    <div class="thumb_box"><img src="img/g7.jpg" alt=""></div>
+                    <div class="txt_box">
+                        <p class="sTit">금주 신상품</p>
+                    </div>
+                </a>
+                <a href="" class="item small">
+                    <div class="thumb_box"><img src="img/g8.jpg" alt=""></div>
+                    <div class="txt_box">
+                        <p class="sTit">이그제큐티브 멤버십</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="con" id="con3">
+            <h2 class="conTit">What's New</h2>
+            <ul class="new">
+                <li><a href="">
+                        <span class="new_box"><img src="img/b1.jpg" alt=""></span>
+                        <p>공기청정기</p>
+                    </a></li>
+                <li><a href="">
+                        <span class="new_box"><img src="img/b2.jpg" alt=""></span>
+                        <p>키친/돌하우스</p>
+                    </a></li>
+                <li><a href="">
+                        <span class="new_box"><img src="img/b3.jpg" alt=""></span>
+                        <p>커피/차</p>
+                    </a></li>
+                <li><a href="">
+                        <span class="new_box"><img src="img/b4.jpg" alt=""></span>
+                        <p>신용카드 제휴사 변경예정 안내문</p>
+                    </a></li>
+            </ul>
+        </section>
+        <section class="con" id="cs">
+            <a href="" class="csbox">
+               <div class="cs_img">
+                   <img src="img/cs1.jpg" alt="">
+               </div>
+               <div class="cs_txt">
+                    <span class="csTit">코스트코 회원가입</span>
+                    <p class="csCom">지금 바로 코스트코 회원권을 구입하세요</p>
+                    <span class="more">회원가입〉</span>
+                </div>
+            </a>
+            <a href="" class="csbox">
+               <div class="cs_img">
+                   <img src="img/cs2.jpg" alt="">
+               </div>
+                <div class="cs_txt">
+                    <span class="csTit">코스트코 온라인몰 등록</span>
+                    <p class="csCom">코스트코 회원이시라면 누구나 무료</p>
+                    <span class="more">온라인몰 등록〉</span>
+                </div>
+            </a>
+            <a href="" class="csbox">
+               <div class="cs_img">
+                   <img src="img/cs3.jpg" alt="">
+               </div>
+                <div class="cs_txt">
+                    <span class="csTit">코스트코 리워드 삼성카드</span>
+                    <p class="csCom">코스트코를 이용하는 가장 스마트한 방법</p>
+                    <span class="more">바로가기〉</span>
+                </div>
+            </a>
+            <a href="" class="csbox">
+               <div class="cs_img">
+                   <img src="img/cs4.jpg" alt="">
+               </div>
+                <div class="cs_txt">
+                    <span class="csTit">코스트코 포토센터</span>
+                    <p class="csCom">온라인에서 쉽게 사진을 인화하세요</p>
+                    <span class="more">바로가기〉</span>
+                </div>
+            </a>
+        </section>
+        <footer id="ft">
+            <nav id="fnb">
+                <ul>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">영상정보처리기기운영·관리방침</a></li>
+                    <li><a href="" class="last">상표 사용 지침</a></li>
+                </ul>
+            </nav>
+            <div class="address">
+                <p>(주)코스트코 코리아</p>
+                <p>14347 경기도 광명시 일직로 40 (일직동 163-3)</p>
+                <p>대표자 : 조민수 | 사업자 등록번호 : 107-81-63829 | 통신판매업 신고번호 : 제2013-경기광명-0013호</p>
+                <p><i class="fas fa-headset"></i>&nbsp;&nbsp;전화 : 1899-9900</p>
+                <p><i class="fas fa-at"></i>&nbsp;&nbsp;E-mail : webmanager@costcokr.com</p>
+                <p>개인정보관리책임자 : 김동일 | 호스팅제공자 : Google Ireland Ltd.</p>
+            </div>
+            <div class="copyright">
+                <span class="copy">© 2018 Costco Wholesale Corporation. All rights reserved.</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

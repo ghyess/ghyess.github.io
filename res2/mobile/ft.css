@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*    푸터영역    */
+#ft {
+    width: 100%;
+    height: 27%;
+    background: #333;
+    position: relative;
+    clear: both;
+}
+
+#ft #fnb {
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #6c6c6c;
+}
+#ft #fnb ul {
+    width: 73%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 6px;
+}
+#ft #fnb li {
+    float: left;
+    padding-right: 10px;
+    width: 120px;
+    line-height: 20px;
+}
+#ft #fnb a {
+    color: #6c6c6c;
+    text-align: center;
+    font-size: .85em;
+    font-weight: bold;
+}
+
+#ft .address {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+#ft .address p {
+    color: #6c6c6c;
+    font-size: .8em;
+    font-weight: bold;
+    line-height: 20px;
+}
+#ft .address .fas {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+#ft #atth {
+    margin-left: 3%;
+}
+
+#ft .copyright {
+    text-align: center;
+    font-size: .7em;
+    color: #6c6c6c;
+    margin-top: 15px;
+}

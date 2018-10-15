@@ -1,0 +1,55 @@
+@charset "utf-8";
+#main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+#main .mainBox {
+    width: 400%;
+    height: 100%;
+    position: relative;
+}
+#main .mainFrame {
+    float: left;
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+#main .mtxt_box {
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    z-index: 20;
+    color: #fff;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+}
+#main .mtxt_box .mtxt1 {
+    font-size: 5vw;
+}
+
+#main .btn_list {
+    z-index: 30;
+    top: 50%;
+    left: 40%;
+    position: absolute;
+    width: 25%;
+    height: 20px;
+}
+#main .btn_list .btn {
+    z-index: 31;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background-color: transparent;
+    background-image: url(ico/btn_off.png);
+    background-repeat: no-repeat;
+}
+#main .btn_list .btn.on {
+    background-image: url(ico/btn_on.png);
+}

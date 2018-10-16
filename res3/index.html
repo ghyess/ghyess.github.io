@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>트립어드바이저:리뷰 확인, 가격 비교하고 예약하세요</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--    파비콘 세팅    -->
+    <link rel="icon" type="image/x-icon" href="./ico/favicon.ico" sizes="32x32">
+<!--    폰트 아이콘     -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!--     폰트 링크   -->
+   <link href="//fonts.googleapis.com/css?family=Nanum+Gothic|Poiret+One" rel="stylesheet">
+<!--   css링크     -->
+    <link rel="stylesheet" href="default.css" type="text/css">
+    <link rel="stylesheet" href="hd.css" type="text/css">
+    <link rel="stylesheet" href="visual.css" type="text/css">
+    <link rel="stylesheet" href="content.css" type="text/css">
+    <link rel="stylesheet" href="ft.css" type="text/css">
+<!--    java/jquery 링크     -->
+    <script src="//code.jquery.com/jquery-latest.js" type="text/jscript"></script>
+    <script src="main.js" type="text/jscript"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="top_util">
+                <div class="t_left">
+                    <input type="text" id="search" placeholder="　검색">
+                    <i class="fas fa-search"></i>
+                </div>
+                <ul class="t_right">
+                    <li class="t_item"><a href="">여행</a></li>
+                    <li class="t_item"><a href="">받은 메시지함</a></li>
+                    <li class="t_item"><a href="">프로필</a></li>
+                    <li class="t_item"><a href="">가입하기</a></li>
+                </ul>
+                <a href="" class="logo"><img src="img/TA_logo_primary.svg" alt=""></a>
+            </div>
+            <ul class="nv">
+                <li class="nv_area"><a href="">호텔</a></li>
+                <li class="nv_area"><a href="">오락거리</a></li>
+                <li class="nv_area"><a href="">음식점</a></li>
+                <li class="nv_area"><a href="">항공권</a></li>
+                <li class="nv_area"><a href="">항공사</a></li>
+                <li class="nv_area"><a href="">더 보기</a></li>
+            </ul>
+        </header>
+        <nav id="gnb">
+            <ul class="sub_inner">
+                <li class="dep"><a href="">남미</a>
+                    <ul class="sub">
+                        <li><a href="">마추피추, 페루</a></li>
+                        <li><a href="">이스터 섬, 칠레</a></li>
+                        <li><a href="">우유니 소금사막, 볼리비아</a></li>
+                        <li><a href="">이과수 폭포, 브라질</a></li>
+                        <li><a href="">쿠스코, 페루</a></li>
+                        <li><a href="">페리토 모레노 빙하, 아르헨티나</a></li>
+                    </ul>
+                </li>
+                <li class="dep"><a href="">남태평양</a>
+                    <ul class="sub">
+                        <li><a href="">괌, 마리아나 제도</a></li>
+                        <li><a href="">멜버른, 오스트레일리아</a></li>
+                        <li><a href="">사이판, 북마리아나제도</a></li>
+                        <li><a href="">시드니, 오스트레일리아</a></li>
+                        <li><a href="">오클랜드, 뉴질랜드</a></li>
+                        <li><a href="">퀸즈타운, 뉴질랜드</a></li>
+                    </ul>
+                </li>
+                <li class="dep"><a href="">북미</a>
+                    <ul class="sub">
+                        <li><a href="">뉴욕</a></li>
+                        <li><a href="">라스베이거스</a></li>
+                        <li><a href="">시애틀, 워싱턴주</a></li>
+                        <li><a href="">캘리포니아, 샌프란시스코</a></li>
+                        <li><a href="">토론토, 온타리오</a></li>
+                        <li><a href="">하와이</a></li>
+                    </ul>
+                </li>
+                <li class="dep"><a href="">아시아</a>
+                    <ul class="sub">
+                        <li><a href="">대한민국</a></li>
+                        <li><a href="">싱가폴</a></li>
+                        <li><a href="">일본</a></li>
+                        <li><a href="">중국</a></li>
+                        <li><a href="">필리핀</a></li>
+                        <li><a href="">홍콩</a></li>
+                    </ul>
+                </li>
+                <li class="dep"><a href="">유럽</a>
+                    <ul class="sub">
+                        <li><a href="">뮌헨, 독일</a></li>
+                        <li><a href="">베니스, 이탈리아</a></li>
+                        <li><a href="">바르셀로나, 스페인</a></li>
+                        <li><a href="">코펜하겐, 덴마크</a></li>
+                        <li><a href="">파리, 프랑스</a></li>
+                        <li><a href="">프라하, 체코공화국</a></li>
+                    </ul>
+                </li>
+                <div class="dep_thum"><img src="img/menu_right.jpg" alt="메뉴오른쪽"></div>
+            </ul>
+        </nav>
+        <figure id="main">
+           <div class="m_list">
+                <button class="m_btn" id="left"></button>
+                <button class="m_btn" id="right"></button>
+            </div>
+            <ul class="mainBox">
+                <li class="mainFrame"><img src="img/main1.jpg" alt="슬라이드1"></li>
+                <li class="mainFrame"><img src="img/main2.jpg" alt="슬라이드2"></li>
+                <li class="mainFrame"><img src="img/main3.jpg" alt="슬라이드3"></li>
+            </ul>
+        </figure>
+        <section class="con" id="con1">
+            <h2 class="conTit">트립어드바이저가 추천하는 프로모션</h2>
+            <div class="morebox"><a href="" class="more">모두 보기&nbsp;&gt;</a></div>
+            <div class="trv_inner">
+                <a href="" class="trv">
+                    <div class="pro_wrap"><img src="img/pro1.jpg" alt="프로모션1"></div>
+                    <span class="trv_line"></span>
+                    <span class="trvTit">파리</span>
+                </a>
+                <a href="" class="trv">
+                    <div class="pro_wrap"><img src="img/pro2.jpg" alt="프로모션2"></div>
+                    <span class="trv_line"></span>
+                    <span class="trvTit">베니스</span>
+                </a>
+                <a href="" class="trv">
+                    <div class="pro_wrap"><img src="img/pro3.jpg" alt="프로모션3"></div>
+                    <span class="trv_line"></span>
+                    <span class="trvTit">푸에르토 바야르타</span>
+                </a>
+            </div>
+        </section>
+        <section class="con" id="con2">
+            <h2 class="conTit">최고의 여행</h2>
+            <div class="toplist">
+                <div class="imgbox">
+                    <div class="img_wrap"><img src="img/top1.jpg" alt="탑여행지2"></div>
+                    <div class="imgtxt">
+                        <h2 class="thumTit">2018 베스트 관광명소</h2>
+                        <span class="thumCom">유니버셜 어드벤쳐 아일랜드, 올랜도</span>
+                        <a href="" class="view">자세히 보기&nbsp;&gt;</a>
+                    </div>
+                </div>
+                <div class="t_txtbox">
+                   <div class="top_txtwrap">
+                    <h3 class="topTit">영감이 필요하세요?</h3>
+                    <p>Travellers' Choice 어워드</p>
+                    <span class="line"></span>
+                    <a href="" class="t_more">더 보기&nbsp;&gt;</a>
+                   </div>
+                </div>
+            </div>
+            <div class="toplist bt">
+               <div class="t_txtbox">
+                   <div class="top_txtwrap">
+                    <h3 class="topTit">영감이 필요하세요?</h3>
+                    <p>수 많은 여행자의 선택</p>
+                    <span class="line"></span>
+                    <a href="" class="t_more">더 보기&nbsp;&gt;</a>
+                   </div>
+                </div>
+                <div class="imgbox">
+                    <div class="img_wrap"><img src="img/top2.jpg" alt="탑여행지2"></div>
+                    <div class="right_txt">
+                        <h2 class="thumTit">2018 베스트 박물관</h2>
+                        <span class="thumCom">오르세, 파리</span>
+                        <a href="" class="view">자세히 보기&nbsp;&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <figure id="banner"><img src="img/banner.jpg" alt="배너"></figure>
+        <section class="con" id="con3">
+            <h2 class="conTit">트립어드바이저 커뮤니티에 가입하세요</h2>
+            <p class="conCom">로그인하여 훌륭한 호텔 특가를 찾고 여행 아이디어를 저장하는 등 다양한 서비스를 이용하세요</p>
+            <a href=""><span class="comm_join">트립어드바이저 커뮤니티 가입하기&nbsp;&gt;</span></a>
+        </section>
+        <!--            커뮤니티 후기 or sns 후기 리스트        -->
+        <div class="con" id="comm">
+           <div class="comm_inner">
+                <div class="combox">
+                    <span class="comTit">Connect With</span>
+                    <span>#tripadvisor</span>
+                    <img src="ico/icon-instagram.png" alt="인스타" class="insta">
+                </div>
+                <div class="combox"><img src="img/sns1.jpg" alt="후기1"></div>
+                <div class="combox"><img src="img/sns2.jpg" alt="후기2"></div>
+                <div class="combox"><img src="img/sns3.jpg" alt="후기3"></div>
+           </div>
+        </div>
+        <section class="con" id="hot">
+            <h2 class="conTit">인기 여행지</h2>
+            <p class="conCom">트립어드바이저 여행자 리뷰에서 추천하는 여행지</p>
+            <ul class="travel">
+                <li><a href="">서울</a></li>
+                <li><a href="">밴쿠버</a></li>
+                <li><a href="">파리</a></li>
+                <li><a href="">도쿄</a></li>
+                <li><a href="">뉴욕</a></li>
+                <li><a href="">런던</a></li>
+                <li><a href="">상하이</a></li>
+                <li><a href="">하와이 섬</a></li>
+                <li><a href="">홍콩</a></li>
+                <li><a href="">두바이</a></li>
+            </ul>
+        </section>
+        <section class="con" id="news">
+            <h2 class="conTit">뉴스레터 구독신청</h2>
+            <div class="n_area">
+                <input type="text" id="email" placeholder="이메일 주소를 입력해주세요.">
+                <button class="mail_btn">입력</button>
+            </div>
+            <p class="conCom">호텔을 최대 30% 할인 받으세요</p>
+            <p class="smallCom">트립어드바이저는 회원님에게 딱 맞는 호텔의 최저가를 찾기 위해 200개 이상의 예약 사이트에서 가격을 비교합니다.</p>
+        </section>
+        <footer id="ft">
+            <div class="snsbox">
+               <div class="snswrap">
+                    <a href="" class="sns"><i class="fab fa-facebook-square"></i></a>
+                    <a href="" class="sns"><i class="fab fa-twitter-square"></i></a>
+                    <a href="" class="sns"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="sns"><i class="fab fa-tripadvisor"></i></a>
+               </div>
+            </div>
+            <nav id="fnb">
+                <div class="address">
+                    <a href="" class="ftlogo"><img src="img/TA_logo_primary.svg" alt="푸터로고"></a>
+                    <p>풍부한 정보</p>
+                    <p>현명한 예약</p>
+                    <p>즐거운 여행</p>
+                </div>
+                <nav id="sitemap">
+                    <ul>
+                        <li>
+                            <a href="">트립어드바이저 소개</a>
+                            <ul class="mapdep">
+                                <li><a href="">트립어드바이저 소개</a></li>
+                                <li><a href="">언론사</a></li>
+                                <li><a href="">구인정보</a></li>
+                                <li><a href="">콘텐츠 무결성</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">트립어드바이저를 통해 거래하세요</a>
+                            <ul class="mapdep">
+                                <li><a href="">오너</a></li>
+                                <li><a href="">비즈니스 플러스</a></li>
+                                <li><a href="">스폰서 우선배치</a></li>
+                                <li><a href="">광고 게재</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">살펴보기</a>
+                            <ul class="mapdep">
+                                <li><a href="">리뷰작성</a></li>
+                                <li><a href="">가입하기</a></li>
+                                <li><a href="">Travellers' Choice</a></li>
+                                <li><a href="">그린 리더</a></li>
+                                <li><a href="">도움말 센터</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">앱 다운로드</a>
+                            <ul class="mapdep">
+                                <li><a href="">iPhone 앱</a></li>
+                                <li><a href="">안드로이드 앱</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </nav>
+            <div class="copy">
+                    <p>© 2018 TripAdvisor LLC All rights reserved.<a href="">이용약관</a><a href="">개인정보취급방침</a></p>
+                    <p>* TripAdvisor LLC는 예약 대행사가 아니며 사이트 이용자에게 서비스 이용료를 일절 청구하지 않습니다.<a href="">더 알아보기</a></p>
+                    <p>TripAdvisor LLC는 외부 웹사이트의 컨텐츠에 대해 책임을 지지 않습니다. 사이트에 게재된 가격 정보에는 세금과 수수료가 포함되어 있지 않습니다.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

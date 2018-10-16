@@ -1,0 +1,98 @@
+@charset "utf-8";
+/*    푸터 영역    */
+#ft {
+    width: 100%;
+    background: #1c1c1c;
+    clear: both;
+    position: relative;
+}
+/*    sns아이콘 박스    */
+#ft .snsbox {
+    background: #2E2E2E;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 0 auto
+}
+#ft .snsbox .snswrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+#ft .snsbox a {
+    font-size: 2em;
+    color: #BDBDBD;
+    float: right;
+    margin: 10px;
+    padding-right: 10px;
+}
+/*    fnb영역    */
+#ft #fnb {
+    width: 1280px;
+    height: 165px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#ft .address {
+    float: left;
+    width: 240px;
+    height: 240px;
+}
+#ft .ftlogo {
+    width: 210px;
+    height: auto;
+}
+#ft .ftlogo img { margin: 0 auto; }
+#ft .address p {
+    text-align: center;
+    color: #848484;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+#ft #sitemap {
+    float: right;
+}
+#ft #sitemap ul>li {
+    float: left;
+    padding-right: 20px;
+    line-height: 24px;
+}
+#ft #sitemap li a {
+    text-align: left;
+    font-weight: bold;
+    color: #848484;
+    line-height: 24px;
+    font-size: .95em;
+}
+
+#ft #sitemap .mapdep li {
+    clear: both;
+}
+#ft #sitemap .mapdep li a {
+    font-size: .8em;
+}
+
+/*    카피라이트 영역    */
+#ft .copy {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 1280px;
+    height: 80px;
+    border-top: 1px solid #424242;
+}
+
+#ft .copy p {
+    text-align: left;
+    color: #585858;
+    font-size: .9em;
+    float: left;
+    line-height: 20px;
+}
+#ft .copy a {
+    float: right;
+    text-align: right;
+    color: #585858;
+    font-size: .9em;
+    padding-right: 6px;
+}

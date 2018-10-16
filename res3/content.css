@@ -1,0 +1,296 @@
+@charset "utf-8";
+/*    컨텐츠 공통 설정    */
+.con {
+    width: 1440px;
+    overflow: hidden;
+    padding: 0 15px;
+    margin: 0 auto;
+    clear: both;
+    position: relative;
+}
+.conTit {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 40px 0;
+    color: #424242;
+}
+.morebox {
+    text-align: right;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.morebox .more {
+    color: #777;
+}
+.conCom {
+    text-align: center;
+    color: #666;
+    font-size: 1.3em;
+}
+
+/*    컨텐츠1 영역    */
+#con1 {
+    background: #fff;
+    height: 550px;
+}
+#con1 .trv_inner {
+    margin: 0 -23px;
+}
+#con1 .trv {
+    display: inline-block;
+    width: 30%;
+    padding: 0 23px;
+}
+#con1 .trv .pro_wrap {
+    margin: 0 auto;
+    width: 440px;
+    height: 250px;
+    overflow: hidden;
+}
+#con1 .trv img { transition: .8s; }
+#con1 .trv img:hover { transform: scale(1.1); }
+#con1 .trv .trv_line {
+    width: 100%;
+    height: 1px;
+    float: right;
+    background: #D8D8D8;
+    margin-top: 20px;
+    clear: both;
+}
+#con1 .trv .trvTit {
+   text-align: right;
+    font-weight: bold;
+    color: #00af87;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+/*  컨텐츠2 영역  */
+#con2 {
+    width: 1240px;
+    height: 1330px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+#con2 .toplist {
+    margin: 40px;
+    width: 1112px;
+    height: 556px;
+    position: relative;
+}
+#con2 .img_wrap { 
+    width: 556px;
+    height: 556px;
+    overflow: hidden;
+    position: relative;
+}
+#con2 .img_wrap img { transition: .8s; }
+#con2 .img_wrap img:hover { transform: scale(1.1); }
+
+#con2 .toplist .imgbox {
+    float: left;
+}
+#con2 .toplist .imgbox .imgtxt {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #fff;
+}
+#con2 .thumTit {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+}
+#con2 .thumCom {
+    line-height: 40px;
+    font-size: 1.4em;
+}
+#con2 .view {
+    font-weight: bold;
+    color: #fff;
+    line-height: 8;
+}
+
+#con2 .toplist .t_txtbox {
+    float: right;
+    width: 556px;
+    height: 556px;
+    text-align: center;
+}
+#con2 .top_txtwrap {
+    margin: 35% 0;
+    color: #525252;
+}
+#con2 .topTit {
+    font-size: 1.8em;
+    margin-bottom: 35px;
+}
+#con2 .top_txtwrap p {
+    font-size: 1.4em;
+}
+#con2 .line {
+    width: 150px;
+    height: 1px;
+    background: #D8D8D8;
+    margin: 25px auto;
+}
+#con2 .t_more {
+    color: #00af87;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#con2 .toplist.bt {
+    left: 2%;
+    top: -5%;
+}
+#con2 .toplist.bt .imgbox {
+    float: right;
+    position: relative;
+}
+#con2 .toplist.bt .t_txtbox {
+    float: left;
+}
+#con2 .toplist.bt .right_txt {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #fff;
+}
+
+/*    배너    */
+#banner { padding-bottom: 40px; }
+
+/*    컨텐츠3    */
+#con3 {
+    width: 100%;
+    height: 550px;
+    background: #F2F2F2;
+    background-image: url(img/skyline-1920.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#con3 .comm_join {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 450px;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #666;
+    color: #666;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*    커뮤니티 후기 리스트    */
+#comm {
+    width: 100%;
+    padding: 60px 0;
+}
+.comm_inner {
+    width: 1280px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+#comm .combox {
+    width: 320px;
+    height: 320px;
+    float: left;
+}
+#comm .combox:nth-child(1) {
+    background: #ebe6de;
+}
+#comm .comTit {
+    text-align: center;
+    margin-top: 100px;
+    color: #685f51;
+    font-size: 1.8em;
+    position: relative;
+}
+#comm span {
+    text-align: center;
+    color: #685f51;
+    margin-bottom: 10px;
+}
+#comm .insta {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#comm .combox {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+}
+#comm .combox img { transition: 1s; }
+#comm .combox img:hover { transform: scale(1.1); }
+
+/*    인기 여행지    */
+#hot {
+    background: #F2F2F2;
+    width: 100%;
+    height: 300px;
+}
+#hot .travel {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 60px;
+}
+#hot .travel li {
+    float: left;
+    padding: 0 35px;
+}
+#hot .travel li a {
+    text-align: center;
+    color: #685f51;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#hot .travel li a:hover { 
+    text-decoration: underline;
+    color: #00af87;
+}
+
+/*    뉴스레터    */
+#news {
+    height: 280px;
+}
+#news .conTit {
+    text-align: left;
+    font-size: 1.4em;
+}
+#news .conCom {
+    margin-top: 30px;
+    font-weight: bold;
+}
+#news .smallCom {
+    text-align: center;
+    color: #666;
+    line-height: 40px;
+}
+
+#news .n_area {
+    width: 1040px;
+    height: 54px;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+}
+#news #email {
+    width: 840px;
+    height: 50px;
+    float: left;
+    text-indent: 10px;
+    font-size: 14px;
+}
+#news .mail_btn {
+    width: 140px;
+    height: 54px;
+    background: #424242;
+    color: #fff;
+    text-align: center;
+}

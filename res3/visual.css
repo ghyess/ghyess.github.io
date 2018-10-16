@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*    비쥬얼 메인    */
+#main {
+    width: 100%;
+    height: 870px;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+#main .mainBox {
+    width: 300%;
+    height: 810px;
+    position: relative;
+}
+#main .mainBox li {
+    width: 33.333%;
+    height: 810px;
+    float: left;
+    overflow: hidden;
+}
+
+/*    좌우 버튼    */
+#main .m_list {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    height: 82px;
+    z-index: 15;
+}
+#main .m_list .m_btn {
+    width: 80px;
+    height: 82px;
+    background-color: transparent;
+    background-image: url(ico/main_bt.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 15;
+    position: absolute;
+}
+#main .m_list #left {
+    left: 10%;
+    transform: rotate(180deg);
+}
+#main .m_list #right {
+    right: 10%;
+}

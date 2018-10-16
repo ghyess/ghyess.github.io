@@ -132,6 +132,7 @@
 #gnb .sub li a {
     font-size: .95em;
 }
+#gnb .sub li a:hover { color: #00af87; }
 
 #gnb .sub_inner .dep_thum {
     float: right;

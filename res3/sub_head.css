@@ -1,0 +1,160 @@
+@charset "utf-8";
+/*    서브 컨텐츠 공통 설정    */
+.top0 {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 15px 0 30px 0;
+}
+.hotel_hd {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+    color: #525252;
+}
+.hotel_hd .hd_copy {
+    line-height: 28px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.con {
+    max-width: 1440px;
+    overflow: hidden;
+    padding: 0 30px;
+    margin: 0 auto;
+    clear: both;
+    position: relative;
+}
+
+/*    화면 경로    */
+.location {
+    float: left;
+}
+.location span {
+    padding-right: 25px;
+    font-size: 14px;
+    color: #666;
+    float: left;
+}
+.location span:last-child {
+    font-weight: bold;
+}
+.location span a {
+    color: #777;
+    position: relative;
+}
+.location span a::after {
+    content: '/';
+    position: absolute;
+    right: -13px;
+}
+
+.btnarea {
+    float: right;
+}
+.btnarea a {
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.btnarea .share { 
+    background-image: url(./ico/ico-breadcrumb.png);
+    background-position: top center;
+}
+.btnarea .print { 
+    background-image: url(./ico/ico-breadcrumb.png);
+    background-position: top right;
+}
+.btnarea .share:hover { 
+    background-image: url(./ico/ico-breadcrumb.png);
+    background-position: center center;
+}
+.btnarea .print:hover { 
+    background-image: url(./ico/ico-breadcrumb.png);
+    background-position: center right;
+}
+
+/*    타이틀    */
+#con .option {
+    background: #f5f5f5;
+    position: relative;
+    height: 64px;
+}
+.option .op_btn {
+    height: 64px;
+    padding: 0 60px 0 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #666;
+    float: left;
+}
+
+.option_right {
+    float: right;
+}
+.option_right span {
+    float: left;
+    padding: 20px;
+    color: #666;
+    font-weight: bold;
+}
+/*    캘린더    */
+.option_right .option_calendar {
+    float: left;
+}
+.option_right .date {
+    float: left;
+    padding: 10px 0;
+}
+input.calendar {
+    height: 36px;
+    text-indent: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+/*    검색창    */
+.option_right .option_search {
+    float: left;
+    padding: 10px 0;
+    margin-left: 20px;
+}
+input#op_search {
+    width: 250px;
+    height: 36px;
+    text-indent: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.option_right #search_btn {
+    float: right;
+    width: 80px;
+    height: 40px;
+    background: #525252;
+    color: #fefefe;
+    margin-right: 30px;
+}
+
+/*    옵션 메뉴바    */
+.item_combox {
+    float: right;
+    clear: both;
+}
+.combox_area {
+    float: left;
+    margin: 20px;
+    margin-left: 5px;
+}
+.combox {
+    width: 200px;
+    height: 40px;
+    padding: 0 10px;
+    color: #666;
+    font-weight: bold;
+}
+

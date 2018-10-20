@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>트립어드바이저:파리추천호텔</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!--    파비콘 세팅    -->
+    <link rel="icon" type="image/x-icon" href="./ico/favicon.ico" sizes="32x32">
+<!--    폰트 아이콘     -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!--     폰트 링크   -->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Poiret+One" rel="stylesheet">
+<!--   css링크     -->
+    <link rel="stylesheet" href="default.css" type="text/css">
+    <link rel="stylesheet" href="hd.css" type="text/css">
+    <link rel="stylesheet" href="sub_head.css" type="text/css">
+    <link rel="stylesheet" href="sub_con.css" type="text/css">
+    <link rel="stylesheet" href="ft.css" type="text/css">
+    <link rel="stylesheet" href="res.css" type="text/css">
+<!--    java/jquery 링크     -->
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/jscript"></script>
+    <script src="main.js" type="text/jscript"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="top_util">
+                <div class="t_left">
+                    <input type="text" id="search" placeholder="　검색">
+                    <i class="fas fa-search"></i>
+                </div>
+                <ul class="t_right">
+                    <li class="t_item"><a href="">여행</a></li>
+                    <li class="t_item"><a href="">받은 메시지함</a></li>
+                    <li class="t_item"><a href="">프로필</a></li>
+                    <li class="t_item"><a href="">가입하기</a></li>
+                </ul>
+                <a href="" class="logo"><img src="img/TA_logo_primary.svg" alt=""></a>
+            </div>
+            <button type="button" id="menu_bt"><i class="fas fa-bars"></i></button>
+            <ul class="nv">
+                <li class="nv_area"><a href="">호텔</a></li>
+                <li class="nv_area"><a href="">오락거리</a></li>
+                <li class="nv_area"><a href="">음식점</a></li>
+                <li class="nv_area"><a href="">항공권</a></li>
+                <li class="nv_area"><a href="">항공사</a></li>
+                <li class="nv_area"><a href="">더 보기</a></li>
+            </ul>
+        </header>
+        <nav id="gnb">
+            <ul class="sub_inner">
+                <li class="dep"><a href="">남미</a>
+                    <ul class="sub">
+                        <li><a href="">마추피추, 페루</a></li>
+                        <li><a href="">이스터 섬, 칠레</a></li>
+                        <li><a href="">우유니 소금사막, 볼리비아</a></li>
+                        <li><a href="">이과수 폭포, 브라질</a></li>
+                        <li><a href="">쿠스코, 페루</a></li>
+                        <li><a href="">페리토 모레노 빙하, 아르헨티나</a></li>
+                    </ul>
+                </li>
+                <li class="dep"><a href="">남태평양</a>
+                    <ul class="sub">
+                        <li><a href="">괌, 마리아나 제도</a></li>
+                        <li><a href="">멜버른, 오스트레일리아</a></li>
+                        <li><a href="">사이판, 북마리아나제도</a></li>
+                        <li><a href="">시드니, 오스트레일리아</a></li>
+                        <li><a href="">오클랜드, 뉴질랜드</a></li>
+                        <li><a href="">퀸즈타운, 뉴질랜드</a></li>
+                    </ul>
+                </li>
+                <li class="dep"><a href="">북미</a>
+                    <ul class="sub">
+                        <li><a href="">뉴욕</a></li>
+                        <li><a href="">라스베이거스</a></li>
+                        <li><a href="">시애틀, 워싱턴주</a></li>
+                        <li><a href="">캘리포니아, 샌프란시스코</a></li>
+                        <li><a href="">토론토, 온타리오</a></li>
+                        <li><a href="">하와이</a></li>
+                    </ul>
+                </li>
+                <li class="dep"><a href="">아시아</a>
+                    <ul class="sub">
+                        <li><a href="">대한민국</a></li>
+                        <li><a href="">싱가폴</a></li>
+                        <li><a href="">일본</a></li>
+                        <li><a href="">중국</a></li>
+                        <li><a href="">필리핀</a></li>
+                        <li><a href="">홍콩</a></li>
+                    </ul>
+                </li>
+                <li class="dep"><a href="">유럽</a>
+                    <ul class="sub">
+                        <li><a href="">뮌헨, 독일</a></li>
+                        <li><a href="">베니스, 이탈리아</a></li>
+                        <li><a href="">바르셀로나, 스페인</a></li>
+                        <li><a href="">코펜하겐, 덴마크</a></li>
+                        <li><a href="">파리, 프랑스</a></li>
+                        <li><a href="">프라하, 체코공화국</a></li>
+                    </ul>
+                </li>
+                <div class="dep_thum"><img src="img/menu_right.jpg" alt="메뉴오른쪽"></div>
+            </ul>
+        </nav>
+        <div class="top0">
+            <div class="location">
+                <span><a href="index.html">홈</a></span>
+                <span><a href="">호텔</a></span>
+                <span><a href="">유럽</a></span>
+                <span>파리, 프랑스</span>
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="btnarea">
+                <a href="" class="share"></a>
+                <a href="" class="print"></a>
+            </div>
+        </div>
+        <div class="hotel_hd">
+            <h1 class="headline">파리 호텔 및 최고의 숙박시설</h1>
+            <p class="hd_copy">트립어드바이저에서 만날 수 있는 특별한 패키지 상품</p>
+        </div>
+        <main class="con" id="con">
+           <div class="option">
+            <div class="option_area">
+                <button type="button" class="op_btn">호텔선택 및 검색옵션</button>
+                <div class="option_right">
+                        <div class="option_calendar">
+                            <span>투숙기간</span>
+                            <div class="date start">
+                                <input type="text" placeholder="YYYY-MM-DD" class="calendar">
+                            </div>
+                            <span>~</span>
+                            <div class="date end">
+                                <input type="text" placeholder="YYYY-MM-DD" class="calendar">
+                            </div>
+                        </div>
+                        <div class="option_search">
+                            <input type="text" placeholder="검색어를 입력해주세요." id="op_search">
+                            <button type="button" id="search_btn">검색</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+            <div class="item_combox">
+                <div class="combox_area">
+                    <select class="combox">
+                        <option value="AUD" class="com_item">Australia (AUD)</option>
+                        <option value="CAD" class="com_item">Canada (CAD)</option>
+                        <option value="CNY" class="com_item">中國 (CNY)</option>
+                        <option value="EUR" class="com_item">EU (EUR)</option>
+                        <option value="HKD" class="com_item">Hong Kong (HKD)</option>
+                        <option value="JPY" class="com_item">日本 (JPY)</option>
+                        <option value="KRW" class="com_item" selected="selected">대한민국 (KRW)</option>
+                        <option value="RUB" class="com_item">Россия (RUB)</option>
+                        <option value="USD" class="com_item">USA (USD)</option>
+                        <option value="VND" class="com_item">Việt nam (VND)</option>
+                    </select>
+                </div>
+                <div class="combox_area">
+                    <select class="combox">
+                        <option value="추천순" class="com_item" selected="selected">추천순</option>
+                        <option value="낮은 가격 순" class="com_item">낮은 가격 순</option>
+                        <option value="높은 가격 순" class="com_item">높은 가격 순</option>
+                    </select>
+                </div>
+            </div>
+            <ul class="hotel_list">
+                <li class="hotel">
+                    <div class="hotel_img"><a href=""><img src="./img/hotel1.jpg" alt="호텔1"></a></div>
+                    <div class="hotel_con">
+                        <div class="con_inside">
+                            <span class="con_type">호텔 시그니쳐 St 게르마인 데 프레스</span>
+                            <a href="" class="con_Tit">Hotel Signature St Germain des Pres</a>
+                            <span class="con_hot">★★★★★</span>
+                            <a href="" class="con_more">자세히 보기 &gt;</a>
+                        </div>
+                        <div class="con_price">
+                            <span class="pr">KRW <strong class="pr_bold">225,681 ~</strong></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="hotel">
+                    <div class="hotel_img"><a href=""><img src="./img/hotel2.jpg" alt="호텔2"></a></div>
+                    <div class="hotel_con">
+                        <div class="con_inside">
+                            <span class="con_type">호텔 말트 - 아스토텔</span>
+                            <a href="" class="con_Tit">Hotel Malte - Astotel</a>
+                            <span class="con_hot">★★★★★</span>
+                            <a href="" class="con_more">자세히 보기 &gt;</a>
+                        </div>
+                        <div class="con_price">
+                            <span class="pr">KRW <strong class="pr_bold">217,635 ~</strong></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="hotel">
+                    <div class="hotel_img"><a href=""><img src="./img/hotel3.jpg" alt="호텔3"></a></div>
+                    <div class="hotel_con">
+                        <div class="con_inside">
+                            <span class="con_type">풀먼 파리 타워 에펠</span>
+                            <a href="" class="con_Tit">Pullman Paris Towers Eiffel</a>
+                            <span class="con_hot">★★★★☆</span>
+                            <a href="" class="con_more">자세히 보기 &gt;</a>
+                        </div>
+                        <div class="con_price">
+                            <span class="pr">KRW <strong class="pr_bold">349,819 ~</strong></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="hotel">
+                    <div class="hotel_img"><a href=""><img src="./img/hotel4.jpg" alt="호텔4"></a></div>
+                    <div class="hotel_con">
+                        <div class="con_inside">
+                            <span class="con_type">호텔 34B - 아스토텔</span>
+                            <a href="" class="con_Tit">Hotel 34B - Astotel</a>
+                            <span class="con_hot">★★★★★</span>
+                            <a href="" class="con_more">자세히 보기 &gt;</a>
+                        </div>
+                        <div class="con_price">
+                            <span class="pr">KRW <strong class="pr_bold">147,043 ~</strong></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="hotel">
+                    <div class="hotel_img"><a href=""><img src="./img/hotel5.jpg" alt="호텔5"></a></div>
+                    <div class="hotel_con">
+                        <div class="con_inside">
+                            <span class="con_type">호텔 조크 - 아스토텔</span>
+                            <a href="" class="con_Tit">Hotel Joke - Astotel</a>
+                            <span class="con_hot">★★★★★</span>
+                            <a href="" class="con_more">자세히 보기 &gt;</a>
+                        </div>
+                        <div class="con_price">
+                            <span class="pr">KRW <strong class="pr_bold">147,043 ~</strong></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="hotel">
+                    <div class="hotel_img"><a href=""><img src="./img/hotel6.jpg" alt="호텔6"></a></div>
+                    <div class="hotel_con">
+                        <div class="con_inside">
+                            <span class="con_type">호텔 르 식스</span>
+                            <a href="" class="con_Tit">Hotel Le Six</a>
+                            <span class="con_hot">★★★★★</span>
+                            <a href="" class="con_more">자세히 보기 &gt;</a>
+                        </div>
+                        <div class="con_price">
+                            <span class="pr">KRW <strong class="pr_bold">303,572 ~</strong></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="paging">
+                <a href="" class="pg parging_anchor">&lt;&lt;</a>
+                <a href="" class="pg parging_anchor">&lt;</a>
+                <span class="pg parging_number on">1</span>
+                <span class="pg parging_number">2</span>
+                <span class="pg parging_number">3</span>
+                <span class="pg parging_number">4</span>
+                <span class="pg parging_number">5</span>
+                <a href="" class="pg parging_anchor">&gt;</a>
+                <a href="" class="pg parging_anchor">&gt;&gt;</a>
+            </div>
+    </main>
+        <footer id="ft">
+            <div class="snsbox">
+               <div class="snswrap">
+                    <a href="" class="sns"><i class="fab fa-facebook-square"></i></a>
+                    <a href="" class="sns"><i class="fab fa-twitter-square"></i></a>
+                    <a href="" class="sns"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="sns"><i class="fab fa-tripadvisor"></i></a>
+               </div>
+            </div>
+            <nav id="fnb">
+                <div class="address">
+                    <a href="" class="ftlogo"><img src="img/TA_logo_primary.svg" alt="푸터로고"></a>
+                    <p>풍부한 정보</p>
+                    <p>현명한 예약</p>
+                    <p>즐거운 여행</p>
+                </div>
+                <nav id="sitemap">
+                    <ul>
+                        <li>
+                            <a href="">트립어드바이저 소개</a>
+                            <ul class="mapdep">
+                                <li><a href="">트립어드바이저 소개</a></li>
+                                <li><a href="">언론사</a></li>
+                                <li><a href="">구인정보</a></li>
+                                <li><a href="">콘텐츠 무결성</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">트립어드바이저를 통해 거래하세요</a>
+                            <ul class="mapdep">
+                                <li><a href="">오너</a></li>
+                                <li><a href="">비즈니스 플러스</a></li>
+                                <li><a href="">스폰서 우선배치</a></li>
+                                <li><a href="">광고 게재</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">살펴보기</a>
+                            <ul class="mapdep">
+                                <li><a href="">리뷰작성</a></li>
+                                <li><a href="">가입하기</a></li>
+                                <li><a href="">Travellers' Choice</a></li>
+                                <li><a href="">그린 리더</a></li>
+                                <li><a href="">도움말 센터</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">앱 다운로드</a>
+                            <ul class="mapdep">
+                                <li><a href="">iPhone 앱</a></li>
+                                <li><a href="">안드로이드 앱</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </nav>
+            <div class="copy">
+                    <p>© 2018 TripAdvisor LLC All rights reserved.<a href="">이용약관</a><a href="">개인정보취급방침</a></p>
+                    <p>* TripAdvisor LLC는 예약 대행사가 아니며 사이트 이용자에게 서비스 이용료를 일절 청구하지 않습니다.<a href="">더 알아보기</a></p>
+                    <p>TripAdvisor LLC는 외부 웹사이트의 컨텐츠에 대해 책임을 지지 않습니다. 사이트에 게재된 가격 정보에는 세금과 수수료가 포함되어 있지 않습니다.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

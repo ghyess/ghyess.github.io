@@ -2,7 +2,7 @@
 /*    헤더 영역     */
 #hd {
     width: 100%;
-    height: 120px;
+    height: 100px;
     position: fixed;
     background-color: transparent;
     top: 0;
@@ -20,7 +20,7 @@
 #hd .logo a {
     display: inline-block;
     min-width: 100px;
-    height: 120px;
+    height: 100px;
     padding: 20px 12px;
     vertical-align: middle;
     box-sizing: border-box;
@@ -42,7 +42,7 @@
 #gnb .menu li {
     display: inline-block;
     width: 16.66667%;
-    padding-top: 54px;
+    padding-top: 44px;
     line-height: 1.45;
     position: relative;
 }

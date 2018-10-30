@@ -1,0 +1,86 @@
+@charset "utf-8";
+#main {
+    width: calc(100% - 200px);
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 100px;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+
+.conwrap {
+    margin: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.con {
+    position: absolute;
+    top: 8%;
+    left: 28%;
+    width: 400px;
+    z-index: 5;
+}
+.con .tit {
+    font-size: 4rem;
+    color: #01DFD7;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    width: 480px;
+}
+.con .txt {
+    width: 300px;
+    text-align: justify;
+}
+
+.map {
+    position: absolute;
+    top: 20%;
+    right: 17%;
+}
+
+/*    폼    */
+#contact {
+    margin-top: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 20px;
+    border: 0;
+    outline: 0;
+    position: relative;
+}
+#inner {
+    width: 350px;
+    height: 380px;
+    border: 0;
+}
+#inner input {
+    clear: both;
+    width: 330px;
+    height: 25px;
+    margin: 5px 0;
+    text-indent: 5px;
+    
+}
+#inner [name=txt] {
+    height: 180px;
+    vertical-align: text-top;
+}
+#inner [name=bt] {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    background: #333;
+    border: 0;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: .8rem;
+}

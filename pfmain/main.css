@@ -9,6 +9,7 @@
     height: 100%;
     position: relative;
     clear: both;
+    overflow: hidden;
 }
 
 /*    이미지    */
@@ -16,7 +17,8 @@
     position: relative;
     overflow: hidden;
     height: 100%;
-    left: 30.5%;
+    width: 1080px;
+    left: 34%;
 }
 .pro-img .img-inner {
     float: left;
@@ -30,7 +32,7 @@
 }
 /*    페이지 넘버    */
 .frame .count {
-    width: 16%;
+    width: 256px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #777;
@@ -54,6 +56,7 @@
 }
 .frame .pv-header {
     margin: 30px 0;
+    width: 350px;
 }
 .frame .pv-header h2 {
     font-size: 45px;
@@ -68,14 +71,16 @@
 }
 
 .frame .pv-txt {
-    width: 50%;
+    width: 283px;
     margin-bottom: 21px;
     font-size: .9rem;
     color: #666;
+    text-align: justify;
 }
 .frame .com {
     margin-bottom: 20px;
     line-height: 1.7;
+    width: 100%;
 }
 .frame .more {
     font-family: 'Montserrat', sans-serif;
@@ -93,6 +98,9 @@
     top: 50%;
     left: 0;
 }
+.frame .more:hover {
+    color: #01DFD7;
+}
 
 /*    페이지별 카운트 색    */
 #pro2 .number {
@@ -104,3 +112,47 @@
 #pro4 .number {
     color: #01DFD7;
 }
+
+/*    이미지 호버    */
+#pro2 .img-inner {
+    overflow: hidden;
+/*    transition: .8s;*/
+    width: 270px;
+    height: 100%;
+/*    position: absolute;*/
+}
+#pro2 img {
+    width: auto;
+    height: 100%;
+    transition: .8s;
+}
+/*
+#pro2 .img-inner:hover {
+    width: 30%;
+}
+#pro2 .img-inner:hover img {
+    transform: scale(1.2);
+    width: auto;
+    height: 100%;
+}*/
+
+
+#pro3 .img-inner {
+    overflow: hidden;
+/*    transition: .8s;*/
+    width: 360px;
+}
+#pro3 img {
+    width: auto;
+    height: 100%;
+    transition: .8s;
+}
+/*
+#pro3 .img-inner:hover {
+    width: 30%;
+}
+#pro3 .img-inner:hover img {
+    transform: scale(1.2);
+    width: auto;
+    height: 100%;
+}*/

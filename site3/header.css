@@ -1,0 +1,194 @@
+@charset "utf-8";
+/*   헤더영역    */
+        .hd {
+            width: 100%;
+            height: 160px;
+            min-height: 160px;
+            clear: both;
+            top: 0;
+            left: 0;
+            z-index: 20;
+            margin: 0 auto;
+            position: absolute;
+        }
+        .hdleft {
+            left: 152px;
+            position: absolute;
+            top: 40px;
+            display: block;
+            float: left;
+        }
+        .opener {
+            display: block;
+            background-image: url("./img/hdbt.gif");
+            background-repeat: no-repeat;
+            width: 120px;
+            height: 120px;
+            float: left;
+            cursor: pointer;
+        }
+        .logo {
+            display: block;
+            background-repeat: no-repeat;
+            float: right;
+            margin: 10px;
+        }
+        .hd .topUtil {
+            float: right;
+            top: 35px;
+            right: 152px;
+            margin-right: -10px;
+            position: absolute;
+        }
+        .topUtil li a {
+            color: #fff;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .topUtil a:hover {
+            text-decoration: underline;
+        }
+        .mainmenu {
+            float: right;
+             top: 85px;
+            right: 152px;
+            margin-right: -10px;
+            position: absolute;
+        }
+        .topUtil li, .mainmenu li {
+            float: left;
+            margin: 20px;
+            color: #fff;
+        }
+        .mainmenu li a {
+            color: #fff;
+            font-family: 'Prata', serif;
+            font-size: 20pt;
+        }
+        .mainmenu a:hover {
+            text-shadow: 0px 0px 15px #fff;
+        }
+        .leftItem {
+            display: none;
+        }
+        
+        #ck {
+            display: none;
+        }
+        #ck:checked ~ #lnb {
+            width: 53%;
+        }
+        #lnb {
+            display: block;
+            position: fixed;
+            top: 0;
+            width: 0;
+            left: -55%;
+            height: 88%;
+            z-index: 1000;
+            clear: both;
+            transition: 0.8s;
+            border-right: 1px solid #fff;
+            background-color: #fff;
+        }
+        #ck:checked + .leftItem {
+            left: 0;
+        }
+
+        .colMenu {
+            clear: both;
+            margin-left: 120px;
+            padding-top: 70px;
+        }
+        .colMenu li {
+            clear: both;
+            line-height: 42px;
+            float: left;
+            padding-top: 2%;
+            padding-left: 6%;
+            position: relative;
+            width: 540px;
+            height: 160px;
+        }
+        .colMenu a {
+            display: block;
+            line-height: 40px;
+            font-family: 'Prata', 'Nanum Gothic', serif, sans-serif;
+            color: #333;
+            font-size: 28px;
+        }
+        .colMenu a:hover {
+            color: #a06cd8;
+        }
+        .colSub {
+            margin-left: 26%;
+            position: absolute;
+            left: 265px;
+            z-index: 1000;
+            display: none;
+            transition: 0.6s;
+            -webkit-transition: 0.6s;
+            width: 260px;
+            height: 70px;
+            top: 22px;
+        }
+        .colSub li {
+            width: 250px;
+            height: 60px;
+            padding-top: 0;
+            padding-left: 0;
+        }
+        .colSub:before {
+            content: " ";
+            display: block;
+            width: 105px;
+            height: 1px;
+            position: absolute;
+            left: -110px;
+            top: 17px;
+            background: #333;
+        }
+        .colSub:before {
+            opacity: 0;
+            transition: all 0.6s;
+        }
+.colMenu li:hover .colSub:before {
+    opacity: 1;
+}
+
+        .colSub a {
+            font-size: 18px;
+            font-weight: bold;
+            text-indent: 10px;
+        }
+
+        .colMenu li:hover .colSub {
+            display: block;
+        }
+        .colMenu li .colSub li {
+            height: 40px;
+            line-height: 40px;
+        }
+        .colMenu .colSub a: hover {
+            text-decoration: underline;
+        }
+
+        #close {
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            background-image: url("./img/close.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition: 0.4s;
+            transform: rotate(0deg);
+            top: 5%;
+        }
+        #close:hover {
+            -webkit-transition: 0.4s;
+            -webkit-transform: rotate(180deg);
+        }

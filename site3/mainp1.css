@@ -1,0 +1,172 @@
+@charset "utf-8";
+/*     첫 번째 페이지      */
+        #con1 {
+            position: relative;
+            overflow: hidden;
+            width: 1600px;
+            height: 800px;
+            padding-top: 160px;
+            margin-left: 150px;
+        }
+        .slitrack {
+            width: 400%;
+            height: 800px;
+            float: left;
+            transition: 0.8s;
+        }
+        .vsFrame {
+            width: 25%;
+            height:  800px;
+            float: left;
+            left: calc(calc(100% - 1600px) / 2);
+            margin: 0 auto;
+            transform: scale(0.8);
+            opacity: 0.4;
+            transition: 0.8s;
+        }
+        .slider1, .slider2, .slider3, .slider4 {
+            float: left;
+            display: block;
+            padding-left: 110px;
+        }
+        .textWrap {
+            float: left;
+            margin-left: 50px;
+            font-family: 'Nanum Gothic', sans-serif;
+            position: relative;
+            width: 550px;
+        }
+        .index {
+            padding-top: 50px;
+            font-size: 20px;
+            line-height: 1.8;
+            color: #616161;
+        }
+        .sB {
+            color: #a27ec8;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .Tit {
+            padding-top: 20px;
+            font-size: 32px;
+            line-height: 1.5;
+            color: #616161;
+            font-weight: bold;
+        }
+        .B {
+            color: #a27ec8;
+            font-size: 36pt;
+        }
+        .Text {
+            padding-top: 30px;
+            padding-left: 70px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #616161;
+            font-weight: 100;
+        }
+        .Text:before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-top: 1px solid #a76fe2;
+            width: 60%;
+            left: -50%;
+            margin-top: 0.6em;
+        }
+        .btn_more2Wrap {
+            padding-top: 50px;
+            float: right;
+        }
+        .btn_more2 {
+            color: #a27ec8;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        .pg1btnBox {
+            width: 400%;
+            height: 72px;
+            position: absolute;
+            top: 45%;
+            left: 0;
+        }
+        .pg1btnBox li {
+            float: left;
+            width: 25%;
+            height: 72px;
+            display: block;
+        }
+        .pg1btnBox li label {
+            display: block;
+            width: 72px;
+            height: 72px;
+            z-index: 20;
+            cursor: pointer
+        }
+         #con1 .left {
+            background-repeat: no-repeat;
+            background-image: url("./img/con_prev.png");
+            float: left;
+        }
+        #con1 .right {
+            background-repeat: no-repeat;
+            background-image: url("./img/con_next.png");
+            float: right;
+        }
+        
+        #con1 .pg1btnpa {
+            position: absolute;
+            z-index: 21;
+            height: 30px;
+            width: 100%;
+            display: block;
+            left: 50%;
+            bottom: 12%;
+        }
+        #con1 .pg1btnpa li label {
+            float: left;
+            width: 20px;
+            height: 20px;
+            display: block;
+            background-repeat: no-repeat;
+            background-image: url("./img/s20_bt_pp_off.png");
+            background-position: center;
+            padding: 10px;
+            margin-right: 6px;
+            cursor: pointer;
+        }
+        
+        input[name=ra1] {
+            display: none;
+        }
+        
+        #ra1:checked ~ .pg1btnpa li #item1 {
+            background-image: url("./img/s20_bt_pp_on.png");
+        }
+        #ra2:checked ~ .pg1btnpa li #item2 {
+            background-image: url("./img/s20_bt_pp_on.png");
+        }
+        #ra3:checked ~ .pg1btnpa li #item3 {
+            background-image: url("./img/s20_bt_pp_on.png");
+        }
+        #ra4:checked ~ .pg1btnpa li #item4 {
+            background-image: url("./img/s20_bt_pp_on.png");
+        }
+        
+        #ra1:checked ~ .pg1btnBox { margin-left: 0; }
+        #ra2:checked ~ .pg1btnBox { margin-left: -100%; }
+        #ra3:checked ~ .pg1btnBox { margin-left: -200%; }
+        #ra4:checked ~ .pg1btnBox { margin-left: -300%; }
+        
+        #ra1:checked ~ .slitrack { margin-left: 0; }
+        #ra2:checked ~ .slitrack { margin-left: -100%; }
+        #ra3:checked ~ .slitrack { margin-left: -200%; }
+        #ra4:checked ~ .slitrack { margin-left: -300%; }
+        
+        #ra1:checked ~ .slitrack .vsFrame.first { transform: scale(1); opacity: 1; }
+        #ra2:checked ~ .slitrack .vsFrame.sec { transform: scale(1); opacity: 1; }
+        #ra3:checked ~ .slitrack .vsFrame.trd { transform: scale(1); opacity: 1; }
+        #ra4:checked ~ .slitrack .vsFrame.four { transform: scale(1); opacity: 1; }

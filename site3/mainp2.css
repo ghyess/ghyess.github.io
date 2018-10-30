@@ -1,0 +1,184 @@
+@charset "utf-8";
+/*   두 번째 페이지     */
+    #con2 {
+            position: relative;
+            overflow: hidden;
+            width: 1600px;
+            height: 750px;
+            padding-top: 110px;
+            margin-left: 150px;
+        }
+        .artWrap {
+            width: 100%;
+            height: 680px;
+            position: relative;
+            overflow: hidden;
+            margin-left: 140px;
+        }
+        .artleft {
+            width: 27%;
+            height: 690px;
+            float: left;
+            position: absolute;
+            background-color: #fff;
+            z-index: 300;
+        }
+        .artmenu {
+            float: left;
+            width: 400px;
+            height: 150px;
+            padding: 5px;
+            vertical-align: middle;
+            position: relative;
+            cursor: pointer;
+            display: block;
+        }
+        .artmenu:after {
+            content: " ";
+            display: block;
+            clear: both;
+            width: 400px;
+            height: 1px;
+            background-color: #ddd;
+            background-repeat: no-repeat;
+        }
+        .listVS {
+            display: inline-block;
+            vertical-align: middle;
+            width: 150px;
+            height: 150px;
+        }
+        .listVS img {
+            width: 150px;
+            height: 150px;
+        }
+        .listTEXT {
+            display: block;
+            float: right;
+            padding: 0 0 0 32px;
+            width: calc(100% - 200px);
+            padding-top: 70px;
+        }
+        .listTEXT span {
+            font-size: 16pt;
+            font-family: 'Song Myung', serif;
+            color: #666;
+        }
+        
+        .artright {
+            width: 4480px;
+            height: 680px;
+            float: left;
+            left: 28%;
+            transition: 1s;
+            margin-left: 0;
+            position: absolute;
+        }
+        .artVS {
+            float: left;
+            width: 1120px;
+            transition: 1s;
+        }
+        .arti {
+            float: left;
+            width: 580px;
+            height: 660px;
+        }
+        .artT {
+            float: left;
+            width: 480px;
+            position: relative;
+            margin-left: 3%;
+        }
+        .artindex {
+            font-family: 'Song Myung', serif;
+            color: #a27ec8;
+            font-size: 24px;
+            line-height: 2;
+        }
+        .artTit {
+            font-family: 'Prata', 'Song Myung', serif;
+            color: #333;
+            font-size: 48px;
+            line-height: 1.2;
+        }
+        .artCom {
+            padding-top: 30px;
+            font-family: 'Nanum Gothic', sans-serif;
+            color: #555;
+            font-size: 13pt;
+            line-height: 2;
+        }
+        .artCom .bold {
+            font-weight: bold;
+            font-size: 20pt;
+            line-height: 1.8;
+            color: #a27ec8;
+        }
+        .artCom:before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-top: 1px solid #a76fe2;
+            width: 35%;
+            left: -37%;
+            margin-top: 1.4em;
+        }
+        .detail3 {
+            padding-top: 50px;
+            float: left;
+            font-family: 'Nanum Gothic', sans-serif;
+            color: #a27ec8;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+         }
+        
+        input[name=ardo1] {
+            display: none;
+        }
+       #ado1:checked ~ .artright {
+            margin-left: 0;
+        }
+        #ado2:checked ~ .artright {
+            margin-left: -1120px;
+        }
+        #ado3:checked ~ .artright {
+            margin-left: -2240px;
+        }
+        #ado4:checked ~ .artright {
+            margin-left: -3360px;
+        }
+        
+        #ado2:checked ~ .artright .artVS.first { transform: scale(0.4); opacity: 0.3; }
+        #ado3:checked ~ .artright .artVS.sec { transform: scale(0.4); opacity: 0.3; }
+        #ado4:checked ~ .artright .artVS.trd { transform: scale(0.4); opacity: 0.3; }
+
+        #ado1:checked ~ .artleft #cVS1:after {
+            background-color: #a27ec8;
+        }
+        #ado1:checked ~ .artleft #cVS1 .listTEXT span {
+            font-size: 18pt;
+            color: #a27ec8;
+        }
+        #ado2:checked ~ .artleft #cVS2:after {
+            background-color: #a27ec8;
+        }
+        #ado2:checked ~ .artleft #cVS2 .listTEXT span {
+            font-size: 18pt;
+            color: #a27ec8;
+        }
+        #ado3:checked ~ .artleft #cVS3:after {
+            background-color: #a27ec8;
+        }
+        #ado3:checked ~ .artleft #cVS3 .listTEXT span {
+            font-size: 18pt;
+            color: #a27ec8;
+        }
+        #ado4:checked ~ .artleft #cVS4:after {
+            background-color: #a27ec8;
+        }
+        #ado4:checked ~ .artleft #cVS4 .listTEXT span {
+            font-size: 18pt;
+            color: #a27ec8;
+        }

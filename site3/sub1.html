@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>더폴린-the paline</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="header.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|Prata|Song+Myung" rel="stylesheet">
+<!--  font-family: 'Song Myung', serif;
+  font-family: 'Nanum Gothic', sans-serif;
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Prata', serif;  -->
+    <style>
+/*     헤더 영역    */
+        .topUtil li a, .mainmenu li a {
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+/*  컨텐츠 상단 영역  */
+        .conWrap {
+            width: 100%;
+            height: 100%;
+        }
+        .content {
+            padding: 180px 0 90px;
+        }
+        
+        .Tithd {
+            padding: 33px 16.66% 16px;
+            border-bottom: 1px solid #a27ec8;
+        }
+        .Maintitle {
+            font-family: 'Prata', serif;
+            color: #333;
+            font-size: 44pt;
+            font-weight: 400;
+            text-align: center;
+        }
+        .Maintext {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: 22px;
+            color: #ababab;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .subMenu {
+            overflow: hidden;
+            max-width: 1280px;
+            position: relative;
+            margin: 0 auto;
+            width: 66.668%;
+            height: 70px;
+        }
+        .navlist {
+            background-color: #fff;
+            vertical-align: top;
+            overflow: hidden;
+            max-width: 1280px;
+            padding: 0;
+        }
+        .navlist li {
+            float: left;
+            display: block;
+            height: 70px;
+        }
+        .navlist li a {
+            display: block;
+            font-family: 'Nanum Gothic', sans-serif;
+            color: #555;
+            font-size: 16px;
+            line-height: 3.2;
+            margin: 10px auto;
+            width: 100%;
+            margin-left: 562px;
+        }
+        .nav1.first a {
+            font-family: 'Montserrat', sans-serif;
+            color: #a27ec8;
+        }
+        
+        .banner {
+            position: relative;
+            text-align: center;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url("./img/tithdbg.jpg");
+        }
+        .bannerTit {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 48%;
+            color: #fff;
+            font-family: 'Prata', serif;
+            font-size: 36pt;
+            font-weight: 400;
+        }
+        
+        .locationArea {
+            margin-top: 20px;
+            padding: 8px 8%;
+        }
+        .location {
+            float: left;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        .location .home {
+            float: left;
+            background-image: url("./img/home.png");
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 17px;
+            padding-left: 20px;
+        }
+        .location li, .location span {
+            color: #666;
+            float: left;
+            padding-left: 30px;
+            font-size: 16px;
+        }
+        .location span {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .location li:after {
+            content: "〉";
+            padding-left: 25px;
+        }
+    </style>
+    <style>
+ /*    컨에리어    */
+        .conArea {
+            width: 100%;
+            clear: both;
+            padding-top: 120px;
+        }
+/*    컨그룹    */
+        .conGroup {
+            clear: both;
+            width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .contentBox {
+            padding-top: 12%;
+        }
+        .contentBox.item2 {
+            padding-top: 3%;
+        }
+/*  탭 영역  */
+        .conGroup label {
+            margin-top: 3%;
+            display: block;
+            float: left;
+            font-family: 'Nanum Gothic', sans-serif;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: #555;
+            width: 340px;
+            height: 72px;
+            position: absolute;
+            line-height: 3.2;
+            border-bottom: 2px solid #a27ec8;
+        }
+        .conGroup label.bt1 {
+            left: 360px;
+            top: 0;
+        }
+        .conGroup label.bt2 {
+            left: 700px;
+            top: 0;
+        }
+        .conGroup .raItem:checked ~ label {
+            border-bottom: 0px;
+            border-top: 2px solid #a27ec8;
+            border-left: 2px solid #a27ec8;
+            border-right: 2px solid #a27ec8;
+        }
+        .conGroup .raItem ~ .coninner {
+            display: none;
+        }
+        .conGroup .raItem:checked ~ .coninner {
+            display: block;
+        }
+        .raItem {
+            display: none;
+        }
+    </style>
+    <style>
+/*  컨텐츠 내용  */
+        .coninner {
+            padding-top: 30px;
+            margin: 0 auto;
+        }
+/*    브랜드소개    */
+        #CP1 {
+            background-image: url("./img/sub1_textimg.jpg");
+            background-repeat: no-repeat;
+            background-position: left 20px;
+            width: 100%;
+            height: 900px; 
+        }
+        .textwrap {
+            float: right;
+            padding-top: 10%;
+            left: 20px;
+            text-shadow: 3px 3px 1px white;
+        }
+        .TBtit {
+            font-family: 'Song Myung', serif;
+            font-size: 38px;
+            color: #333;
+            line-height: 40px;
+            font-weight: 400;
+            letter-spacing: -2px;
+            padding-bottom: 4%;
+        }
+        .Tbold {
+            font-size: 56px;
+            color: #a27ec8;
+        }
+        .tComA {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: bold;
+            color: #333;
+            font-size: 20px;
+            line-height: 2.8;
+            padding-bottom: 8%;
+            padding-left: 17%;
+        }
+/*    매장 위치    */
+        #CP2 {
+            width: 100%;
+            height: auto;
+        }
+        .stWrap {
+            padding-top: 2%;
+            margin-left: 20px;
+        }
+        .store {
+            font-family: 'Nanum Gothic', sans-serif;
+            color: #333;
+            font-weight: bold;
+            line-height: 1.6;
+            padding-bottom: 2%;
+        }
+        iframe {
+            padding-top: 10px;
+        }
+        .MapTit:after {
+            content: "■";
+            float: left;
+            margin-right: 8px;
+        }
+        .MapTit {
+            font-size: 21px;
+            color: #a27ec8;
+        }
+        .MapTel {
+            color: #A4A4A4;
+        }
+    </style>
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="ktslider1.js"></script>
+    <script src="txtslider1.js"></script>
+    <script src="page_topbt.js"></script>
+</head>
+<body>
+    <div class="pageWrap">
+        <header class="hd">
+          <div class="hdleft">
+                <a href="index.html" class="logo">
+                     <img src="./img/logo-b.png">
+                </a>
+                <label for="ck" class="opener"></label>
+         </div>
+            <ul class="topUtil">
+                        <li><a href="sub1.html">매장안내</a></li>
+                        <li><a href="review.html">고객리뷰</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">로그인</a></li>
+            </ul>
+            <nav class="gnb">
+                    <ul class="mainmenu">
+                        <li><a href="sub1.html">The Pauline</a></li>
+                        <li><a href="sub2.html">Solid Perfume</a></li>
+                        <li><a href="sub3.html">Home Fragrance</a></li>
+                        <li><a href="event.html">Event</a></li>
+                    </ul>
+            </nav>
+            <input type="checkbox" id="ck" class="ckItem">
+            <aside id="lnb" class="leftItem">
+                        <ul class="colMenu">
+                       <li class="MTit">
+                            <a href="sub1.html" class="Ctit">THE PAULINE.</a>
+                            <ul class="colSub">
+                                    <li ><a href="sub1.html">브랜드 소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="MTit">
+                              <a href="sub2.html">Solid Perfume.</a>
+                                <ul class="colSub">
+                                    <li><a href="sub2.html">인기 향</a></li>
+                                    <li><a href="product1.html">시트러스［상큼］</a></li>
+                                    <li><a href="product2.html">프루티［과일］</a></li>
+                                    <li><a href="product3.html">플로럴［꽃］</a></li>
+                                    <li><a href="product4.html">아쿠아［바다］</a></li>
+                                    <li><a href="product5.html">우디［나무］</a></li>
+                                    <li><a href="product6.html">머스키［부드러움］</a></li>
+                                </ul>
+                        </li>
+                        <li class="MTit">
+                                    <a href="sub3.html">Home Fragrance.</a>
+                            <ul class="colSub">
+                                    <li><a href="sub3.html">디퓨저</a></li>
+                                    <li><a href="candle.html">소이캔들</a></li>
+                                    <li><a href="sash.html">코튼사쉐</a></li>
+                                    <li><a href="dress.html">드레스퍼퓸</a></li>
+                                    <li><a href="gold.html">골든클러스터</a></li>
+                            </ul>
+                        </li>
+                        <li class="MTit">
+                                   <a href="event.html">Event.</a>     
+                            <ul class="colSub">
+                                    <li><a href="event.html">진행중인 이벤트</a></li>
+                                    <li><a href="event.html">지난 이벤트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                   <label for="ck" id="close"></label>
+            </aside>
+        </header>
+            <div class="content">
+                <div class="Tithd">
+                    <h2 class="Maintitle">THE PAULINE</h2>
+                    <p class="Maintext">사람이 떠나도 향기는 남습니다.</p>
+                </div>
+                <div class="subMenu">
+                    <ul class="navlist">
+                        <li class="nav1 first"><a href="#tb1">THE PAULINE</a></li>
+                    </ul>
+                </div>
+                <div class="banner">
+                    <h3 class="bannerTit">THE PAULINE</h3>
+                </div>
+                <div class="locationArea">
+                    <ul class="location">
+                        <li class="home"></li>
+                        <span>THE PAULINE</span>
+                    </ul>
+                </div>
+                <div class="conArea">
+                   <ul class="conGroup">
+                        <li class="contentBox item1" id="tb1">
+                        <input type="radio" name="raGrp1" id="ra1" class="raItem" checked>
+                        <label for="ra1" class="TAB bt1">브랜드 소개</label>
+                        <div class="coninner">
+                            <section class="conPage" id="CP1">
+                               <div class="textwrap">
+                                <h2 class="TBtit">
+                                    <span class="Tbold">사람</span>
+                                    은 떠나도
+                                    <span class="Tbold">향기</span>
+                                    는 남습니다.
+                                </h2>
+                                <p class="tComA">
+                                향은 누군가에겐 위로가,<br/>
+                                누군가에겐 추억이 됩니다.
+                                </p>
+                                <p class="tComA">더폴린은 가치있는 향을 담아드리고자<br/>
+                                하나하나 정성을 다해 만드는<br/>
+                                핸드메이드 브랜드입니다.
+                                </p>
+                                <p class="tComA">더폴린의 고품격 향으로,<br/>
+                                <span class="tColor">당신의 아름다움을 표현해보세요.</span>
+                                </p>
+                                </div>
+                            </section>
+                        </div>
+                      </li>
+                        <li class="contentBox item2" id="tb2">
+                        <input type="radio" name="raGrp1" id="ra2" class="raItem">
+                        <label for="ra2" class="TAB bt2">매장위치 안내</label>
+                        <div class="coninner">
+                            <section class="conPage" id="CP2">
+                               <img src="./img/mapTit.jpg">
+                               <div class="stWrap">
+                                <li class="store">
+                                    <h3 class="MapTit">롯데백화점 김포공항점</h3>
+                                    <p class="MapName">서울특별시 강서구 하늘길 77 롯데백화점 GF 누셀렉샵</p>
+                                    <p class="MapTel">Tel. 02-6116-3029 / MON-SUN. 10:30 ~ 22:00</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1118.1716124075476!2d126.80252826029387!3d37.56291055043133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9cbfc3da650b%3A0x5c9dc92e0d0ba203!2z66Gv642w67Cx7ZmU7KCQIOq5gO2PrOqzte2VreygkA!5e0!3m2!1sko!2skr!4v1530590456744" width="373" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </li>
+                                <li class="store">
+                                    <h3 class="MapTit">교보핫트랙스 디큐브시티점</h3>
+                                    <p class="MapName">서울특별시 구로구 경인로 662 디큐브백화점 B1 교보핫트랙스</p>
+                                    <p class="MapTel">Tel. 02-3667-9961 / MON-THU. 11:00 ~ 21:30 / FRI-SUN. 11:00 ~ 22:00</p>
+                                </li>
+                                <li class="store">
+                                    <h3 class="MapTit">롯데백화점 건대 스타시티점</h3>
+                                    <p class="MapName">서울특별시 광진구 자양동 227-342 롯데백화점스타시티점 2층 누셀렉샵</p>
+                                    <p class="MapTel">Tel. 02-2218-2500 / MON-SUM. 10:30 ~ 20:00</p>
+                                </li>
+                                <li class="store">
+                                    <h3 class="MapTit">교보핫트랙스 영등포점</h3>
+                                    <p class="MapName">서울특별시 영등포구 영중로 15 타임스퀘어 2F 교보핫트랙스</p>
+                                    <p class="MapTel">Tel. 02-2678-9961 / MON-SUN. 10:00 ~ 22:00</p>
+                                </li>
+                                <li class="store">
+                                    <h3 class="MapTit">코즈니 영등포 타임스퀘어점</h3>
+                                    <p class="MapName">서울특별시 영등포구 영중로 15 타임스퀘어 4층 코즈니</p>
+                                    <p class="MapTel">Tel. 02-2638-2000 / MON-SUN. 10:30 ~ 22:00</p>
+                                </li>
+                                <li class="store">
+                                    <h3 class="MapTit">롯데백화점 명동점 영플라자</h3>
+                                    <p class="MapName">서울특별시 중구 소공동 1 영플라자 2F 누셀렉샵</p>
+                                    <p class="MapTel">Tel. 02-2118-5160 / MON-SUN. 11:30 ~ 21:30</p>
+                                </li>
+                                </div>
+                            </section>
+                        </div>
+                      </li>
+                   </ul>
+                </div>
+            </div>
+           <div>
+                <a href="" id="toTop"></a>
+            </div>
+            <footer id="ft">
+            <div class="ftWrap">
+                <nav id="fnb">
+                   <div class="leftF">
+                        <ul>
+                            <li><a href="">고객리뷰</a></li>
+                            <li><a href="sub1.html" class="last">매장안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="centerF">
+                        <li><a href="index.html"><img src="./img/logo-w.png" alt=""></a></li>
+                    </div>
+                    <div class="rightF">
+                        <ul class="snsBox">
+                            <li><a href=""></a><img src="./img/ico_tw.png" alt=""></li>
+                            <li><a href=""></a><img src="./img/ico_fb.png" alt=""></li>
+                            <li><a href=""></a><img src="./img/ico_is.png" alt=""></li>
+                            <li><a href=""></a><img src="./img/ico_pin.png" alt=""></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="copyCom">
+                    <p class="copyright">더 폴린(THE PAULINE)｜서울시 강서구 화곡 3동 1019-2 3층 더폴린
+                    <br/>Tel. 02 2647 8808｜E-Mail. thepauline@naver.com
+                    <br/>Copyright 2018. GWON HYE SEON Portfolio. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

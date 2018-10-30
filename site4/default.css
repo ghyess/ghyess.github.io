@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*    공통 서식    */
+        * { margin: 0; padding: 0;}
+        body, html { width: 100%; height: 100%;}
+        ::-webkit-scrollbar { display: none; }
+        ul, li { list-style: none; }
+        a { text-decoration: none; }
+        
+        .pageWrap {
+            width: 100%;
+            height: 100%;
+        }

@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*        왼쪽 퀵바-브리오니 레전드-     */
+        .quickFrame {
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            height: 100%;
+            left: -100%;
+            top: 0;
+            background: rgba(0,0,0,0.6);
+            transition: 0.7s;
+        }
+        .cnb {
+            width: 900px;
+            height: 230px;
+            position: absolute;
+            top: 64%;
+            right: -70px;
+            border-radius: 0px 25px 25px 0px;
+            background: #0b0b3b;
+            padding: 50px;
+        }
+        .cnb li {
+            float: left;
+        }
+        .cnb .quickImgFrame {
+            width: 300px;
+        }
+        
+        .quickTxtFrame {
+            width: 475px;
+            padding: 35px;
+        }
+        .wTxt {
+            color: #fff;
+            float: left;
+        }
+        .collapName {
+            writing-mode: tb-rl;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            position: absolute;
+            z-index: 100;
+            right: 32px;
+            top: 80px;
+        }
+        .quickTit {
+            font-family: "Cinzel", cursive;
+            font-size: 20pt;
+            line-height: 60px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .quickDesc {
+            font-family: "Comfortaa", sans-serif;
+            font-size: 18px;
+            text-align: justify;
+        }
+        
+        .closeBtn1 {
+            background: url("./img/close.png") no-repeat;
+            background-position: 0px 0px;
+            top: 25px;
+            right: 25px;
+            width: 30px;
+            height: 30px;
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            z-index: 100;
+        }
+        
+        #collapCk1 { display: none; }
+        
+        #collapCk1:checked ~ .quickFrame { left: 0; }
+        #collapCk1:checked ~ .quickFrame .cnb { left: 0; right: auto; }

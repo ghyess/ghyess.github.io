@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/*        헤더 영역     */
+        .hd {
+            width: 100%;
+            height: 134px;
+            z-index: 170;
+            position: relative;
+        }
+        #gnb {
+            width: 100%;
+            height: 134px;
+        }
+        .topUtil {
+            float: right;
+            background-color: #363851;
+            width: 100%;
+            height: 48px;
+        }
+        .topUtil a {
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            color: #fff;
+            float: right;
+            padding-right: 48px;
+            margin-top: 15px;
+        }
+        
+        #gnb .logo {
+            display: block;
+            width: 152px;
+            height: 85px;
+            background-image: url("./img/logo-w.png");
+            background-repeat: no-repeat;
+            float: left;
+            margin-right: 450px;
+        }
+        .gnbWrap {
+            width: 1746px;
+            height: 85px;
+            float: left;
+            margin: 0 auto;
+            padding-left: 120px;
+            padding-right: 36px;
+            border-bottom: 1px solid #fff;
+            top: 48px;
+            position: absolute;
+        }
+        .menu {
+            display: block;
+            float: left;
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            padding-right: 70px;
+            margin-top: 34px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+/*    사이트맵    */
+
+        .openBtn {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            top: 33px;
+            right: 6%;
+            float: right;
+            cursor: pointer;
+        }
+        .openBtn .sitemap_icon {
+            position: absolute;
+            width: 28px;
+            height: 24px;
+            background: url("./img/sitemap_icons.png") no-repeat;
+            display: block;
+            z-index: 170;
+        }
+        .MenuGuid {
+            display: none;
+            position: absolute;
+            top: 85px;
+            left: 0;
+            width: 1920px;
+            background: #f4f4f4;
+            z-index: 150;
+            border-top: 1px solid #6c6c6c;
+        }
+        .leftimgWrap {
+            float: left;
+            margin-left: 340px;
+            padding: 40px;
+            width: 280px;
+            padding-left: 60px;
+            height: 392px;
+            background: #f4f4f4;
+            z-index: 150;
+        }
+        .left_tit {
+            font-size: 24pt;
+            color: #0b0b3b;
+            line-height: 1.2;
+        }
+        .left_com {
+            font-family: "Comfortaa", sans-serif;
+            font-weight: 300;
+            font-size: 18pt;
+            color: #444;
+            line-height: 2.2;
+        }
+        
+        .MGWrap {
+            float: left;
+            padding: 40px;
+            min-width: 800px;
+            min-height: 392px;
+            background: #fff;
+            z-index: 150;
+        }
+        #MGwrap02 { padding: 28px; }
+        #MGwrap03 { padding: 30px; }
+        .MGWrap li {
+            float: left;
+            margin: 5px;
+            width: 200px;
+        }
+        .MGtit {
+            color: #0b0b3b;
+            font-size: 20px;
+            font-family: "Comfortaa", sans-serif;
+            line-height: 1.5;
+        }
+        .MGcom {
+            color: #444;
+            font-family: "Inconsolata", cursive;
+            text-align: justify;
+            width: 190px;
+        }
+        
+        .collap {
+            position: absolute;
+            z-index: 170;
+            min-width: 1920px;
+            min-height: 700px;
+            background: #fff;
+            box-sizing: border-box;
+            box-shadow: 0px 10px 20px #222;
+            border-radius: 20px;
+            display: none;
+        }
+        .sitemapTit {
+            font-family: "Montserrat", sans-serif;
+            font-size: 28pt;
+            text-indent: 7.5%;
+            margin: 10px;
+            width: 330px;
+            border-bottom: 2px solid #363851;
+            color: #363851;
+        }
+        .sitemap {
+            width: 1700px;
+            height: 550px;
+            margin: 20px auto;
+            padding-left: 6%;
+            box-sizing: border-box;
+            position: relative;
+
+        }
+        .sitemap ul {
+            float: left;
+            width: 300px;
+        }
+        .sitemap ul li {
+            box-sizing: border-box;
+            width: 290px;
+            height: 50px;
+            margin-top: 20px;
+        /*    border: 1px solid blue;*/
+        }
+        .sitemap ul li a {
+            display: block;
+            color: #333;
+            text-align: center;
+            line-height: 3;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14pt;
+        }
+        .sitemap ul li:nth-child(1) a {
+            font-weight: bold;
+            font-size: 16pt;
+            color: #363851;
+        }
+        .sitemap ul li span {
+            display: block;
+            width: 0;
+            height: 2px;
+            transition: 0.8s;
+            margin: 0 auto;
+            background: #e2e5ff;
+        }
+        .sitemap ul li:hover span {
+            width: 100%;
+            background:#363851;
+        }
+        .sitemap ul li a:hover {
+            font-weight: bold;
+        }
+        .closeBtn2 {
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 40px;
+            top: -10%;
+            right: 3%;
+            cursor: pointer;
+        }
+
+/*
+        #sub02, #sub03, #sub04, #sub05 {
+            display: none;
+        }
+*/

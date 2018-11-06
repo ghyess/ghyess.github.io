@@ -153,6 +153,7 @@
     text-indent: 20px;
     font-size: .9rem;
     color: #6E6E6E;
+    margin: 5px 0;
 }
 .con .txt span:first-child {
     text-indent: 0;
@@ -162,6 +163,10 @@
     font-family: 'Montserrat', sans-serif;
     line-height: .5;
     color: #29088A;
+}
+.con .txt i {
+    font-size: 1.2rem;
+    margin: 4px;
 }
 
 /*            지도            */
@@ -178,7 +183,7 @@
     border: 0;
     outline: 0;
     position: absolute;
-    top: 35%;
+    top: 41%;
     right: 18%;
 }
 #inner {

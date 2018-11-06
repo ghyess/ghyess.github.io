@@ -27,7 +27,7 @@
 }
 #hd .logo img {
     min-width: 100%;
-    height: 100%;
+    height: 70%;
     margin: 0 auto;
 }
 
@@ -93,9 +93,10 @@ aside#right {
     background: #fff;
     border: 1px solid #777;
     position: absolute;
-    right: -10%;
+    left: 4%;
     top: 50%;
     cursor: pointer;
+    z-index: 25;
 }
 #menu_bt .fas {
     text-align: center;
@@ -105,6 +106,7 @@ aside#right {
 }
 #menu_bt.on .fas {
     transform: rotate(-180deg);
+    color: #29088A;
 }
 
 /*    사이드 메뉴    */
@@ -118,10 +120,12 @@ aside#right {
     background: #fff;
     z-index: 4;
     transition: .8s;
+    opacity: 0;
 }
 #side-menu.act {
     z-index: 15;
     left: 100px;
+    opacity: 1;
 }
 
 #side-menu .dep {
@@ -137,5 +141,5 @@ aside#right {
     color: #333;
 }
 #side-menu a:hover {
-    color: #01DFD7;
+    color: #29088A;
 }

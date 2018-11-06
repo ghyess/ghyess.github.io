@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Portfolio :: portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi">
+    <!--    파비콘 세팅    -->
+    <link rel="icon" type="image/x-icon" href="./ico/favicon.ico" sizes="32x32">
 <!--    폰트어썸     -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 <!--    폰트/CSS    -->
@@ -11,24 +13,30 @@
     <link rel="stylesheet" href="deafult.css" type="text/css">
     <link rel="stylesheet" href="hd.css" type="text/css">
     <link rel="stylesheet" href="works.css" type="text/css">
+    <link rel="stylesheet" href="page.css" type="text/css">
 <!--    스크립트     -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="main.js" type="text/jscript"></script>
     <script src="menu.js" type="text/jscript"></script>
+    <script src="loding.js" type="text/jscript"></script>
 </head>
 <body>
+  <div class="loader-moving">
+      <span class="left"></span>
+      <span class="right"></span>
+  </div>
    <div class="wrap">
     <header id="hd">
         <div class="logo">
-            <a href="index.html"><img src="http://placehold.it/100x100/333/fff" alt=""></a>
+            <a href="index.html"><img src="./ico/logo.svg" alt=""></a>
         </div>
         <nav id="gnb">
             <ul class="menu">
                 <li></li>
-                <li><a href="">INTRO</a></li>
+                <li><a href="intro.html">INTRO</a></li>
                 <li><a href="works.html">WORKS</a></li>
-                <li><a href="portfolio.html" style="color: #01DFD7;">PORTFOLIO</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="portfolio.html" style="color: #29088A;">PORTFOLIO</a></li>
+                <li><a href="cont.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -39,35 +47,35 @@
                     <img src="./img/pf1.jpg" alt="">
                     <div class="w_txt">
                         <p class="wcom">Brioni : 데스크탑</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <a href="https://ghyess.github.io/site4/" target="_blank" class="more"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="./img/pf2-2.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">The PAULINE : 데스크탑</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">THE PAULINE : 데스크탑</p>
+                        <a href="https://ghyess.github.io/site3/" target="_blank" class="more"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="./img/pf3.jpg" alt="">
                     <div class="w_txt">
                         <p class="wcom">광동제약 : 데스크탑</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <a href="https://ghyess.github.io/site6" target="_blank" class="more"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="./img/pf4.jpg" alt="">
                     <div class="w_txt">
                         <p class="wcom">대한민국 청와대 : 모바일</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <a href="https://ghyess.github.io/mobile4/" target="_blank" class="more"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="./img/pf5.jpg" alt="">
                     <div class="w_txt">
                         <p class="wcom">이케아 : 모바일</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <a href="https://ghyess.github.io/mobile6" target="_blank" class="more"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -76,21 +84,21 @@
                     <img src="./img/pf6.jpg" alt="">
                     <div class="w_txt">
                         <p class="wcom">H&amp;M : 모바일</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <a href="https://ghyess.github.io/mobile7" target="_blank" class="more"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="./img/pf7.jpg" alt="">
                     <div class="w_txt">
                         <p class="wcom">트립어드바이저 : 반응형</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <a href="https://ghyess.github.io/res3" class="more"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="./img/pf8.jpg" alt="">
                     <div class="w_txt">
                         <p class="wcom">코스트코 : 반응형</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <a href="https://ghyess.github.io/res1" class="more"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -152,15 +160,15 @@
     </aside>
     <aside id="side-menu">
         <ul class="dep">
-            <li><a href="">INTRO</a></li>
+            <li><a href="intro.html">INTRO</a></li>
             <li><a href="works.html">WORKS</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="cont.html">CONTACT</a></li>
         </ul>
-        <button type="button" id="menu_bt">
-            <i class="fas fa-angle-right"></i>
-        </button>
     </aside>
+    <button type="button" id="menu_bt">
+        <i class="fas fa-angle-right"></i>
+    </button>
     <aside class="side" id="right">
         <div class="cont copy">Copyright. 2018. Gwon Hye Seon. All rights reserved.</div>
     </aside>

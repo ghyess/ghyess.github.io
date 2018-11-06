@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Portfolio :: work</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi">
+    <!--    파비콘 세팅    -->
+    <link rel="icon" type="image/x-icon" href="./ico/favicon.ico" sizes="32x32">
 <!--    폰트어썸     -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 <!--    폰트/CSS    -->
@@ -11,24 +13,30 @@
     <link rel="stylesheet" href="deafult.css" type="text/css">
     <link rel="stylesheet" href="hd.css" type="text/css">
     <link rel="stylesheet" href="works.css" type="text/css">
+    <link rel="stylesheet" href="page.css" type="text/css">
 <!--    스크립트     -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="main.js" type="text/jscript"></script>
     <script src="menu.js" type="text/jscript"></script>
+    <script src="loding.js" type="text/jscript"></script>
 </head>
 <body>
+   <div class="loader-moving">
+       <span class="left"></span>
+       <span class="right"></span>
+   </div>
    <div class="wrap">
     <header id="hd">
         <div class="logo">
-            <a href="index.html"><img src="http://placehold.it/100x100/333/fff" alt=""></a>
+            <a href="index.html"><img src="./ico/logo.svg" alt=""></a>
         </div>
         <nav id="gnb">
             <ul class="menu">
                 <li></li>
-                <li><a href="">INTRO</a></li>
-                <li><a href="works.html" style="color: #01DFD7;">WORKS</a></li>
+                <li><a href="intro.html">INTRO</a></li>
+                <li><a href="works.html" style="color: #29088A;">WORKS</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="cont.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -36,112 +44,121 @@
         <section class="works">
             <div class="work_inner">
                 <div class="work">
-                    <img src="http://placehold.it/340x370/F8E0E6/fff" alt="">
+                    <img src="./img/wk1.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">작업물A</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">스토리보드:<br>THE PAULINE</p>
+                        <a href="https://i.postimg.cc/GcVC4BQP/2-1-1.jpg" target="_blank" class="more"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="http://placehold.it/340x370/F5A9BC/fff" alt="">
+                    <img src="./img/wk2.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">작업물B</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">무드보드:<br>THE PAULINE</p>
+                        <a href="https://i.postimg.cc/ZbhxTSgb/image.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="http://placehold.it/340x370/F7819F/fff" alt="">
+                    <img src="./img/wk3.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">작업물C</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">IA 구조도:<br>THE PAULINE</p>
+                        <a href="https://i.postimg.cc/X3td33yT/ia.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="http://placehold.it/340x370/FA5882/fff" alt="">
+                    <img src="./img/wk4.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">작업물D</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">디자인 메인 시안:<br>THE PAULINE</p>
+                        <a href="https://i.postimg.cc/GcR65ZQD/image.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="http://placehold.it/340x370/FE2E64/fff" alt="">
+                    <img src="./img/wk5.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">작업물E</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="work_inner">
-                <div class="work">
-                    <img src="http://placehold.it/340x370/4000FF/fff" alt="">
-                    <div class="w_txt">
-                        <p class="wcom">작업물F</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="http://placehold.it/340x370/642EFE/fff" alt="">
-                    <div class="w_txt">
-                        <p class="wcom">작업물G</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="http://placehold.it/340x370/8258FA/fff" alt="">
-                    <div class="w_txt">
-                        <p class="wcom">작업물H</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="http://placehold.it/340x370/BCA9F5/fff" alt="">
-                    <div class="w_txt">
-                        <p class="wcom">작업물I</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="http://placehold.it/340x370/D8CEF6/fff" alt="">
-                    <div class="w_txt">
-                        <p class="wcom">작업물J</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">디자인 서브 시안:<br>THE PAULINE</p>
+                        <a href="https://i.postimg.cc/6WmjtSdY/1.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
             </div>
             <div class="work_inner">
                 <div class="work">
-                    <img src="http://placehold.it/340x370/E0F2F7/fff" alt="">
+                    <img src="./img/wk6.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">작업물K</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">디자인 서브 시안:<br>THE PAULINE</p>
+                        <a href="https://i.postimg.cc/knjwvZhq/2.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="http://placehold.it/340x370/A9E2F3/fff" alt="">
+                    <img src="./img/wk7.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">작업물L</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">무드보드:광동제약</p>
+                        <a href="https://i.postimg.cc/fMPJ7fj1/image.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="http://placehold.it/340x370/81DAF5/fff" alt="">
+                    <img src="./img/wk8.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">작업물M</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">레이아웃:광동제약</p>
+                        <a href="https://i.postimg.cc/WpzB7g7f/2-3-1.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="http://placehold.it/340x370/58D3F7/fff" alt="">
+                    <img src="./img/wk9.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">작업물N</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">레이아웃:광동제약</p>
+                        <a href="https://i.postimg.cc/RSwDvGZt/2-3-2.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="http://placehold.it/340x370/00BFFF/fff" alt="">
+                    <img src="./img/wk10.jpg" alt="">
                     <div class="w_txt">
-                        <p class="wcom">작업물O</p>
-                        <a href="" class="more"><i class="fas fa-plus-circle"></i></a>
+                        <p class="wcom">레이아웃:광동제약</p>
+                        <a href="https://i.postimg.cc/vbYNdrF1/2-3-3.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work_inner">
+                <div class="work">
+                    <img src="./img/wk11.jpg" alt="">
+                    <div class="w_txt">
+                        <p class="wcom">디자인 메인 시안:광동제약</p>
+                        <a href="https://i.postimg.cc/w6Qf12NY/1.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/wk12.jpg" alt="">
+                    <div class="w_txt">
+                        <p class="wcom">정보구조설계:<br>HaaSE COFFEE</p>
+                        <a href="https://i.postimg.cc/p2KNqKns/image.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/wk13.jpg" alt="">
+                    <div class="w_txt">
+                        <p class="wcom">디자인 메인 시안:<br>HaaSE COFFEE</p>
+                        <a href="https://i.postimg.cc/7xbvrjcQ/image.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/wk14.jpg" alt="">
+                    <div class="w_txt">
+                        <p class="wcom">IA 구조도:Brioni</p>
+                        <a href="https://i.postimg.cc/Lm2YD37s/image.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/wk15.jpg" alt="">
+                    <div class="w_txt">
+                        <p class="wcom">디자인 메인 시안:Brioni</p>
+                        <a href="https://i.postimg.cc/TTsx1RrX/image.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work_inner">
+                <div class="work">
+                    <img src="./img/wk16.jpg" alt="">
+                    <div class="w_txt">
+                        <p class="wcom">모바일 메인 시안:<br>대한민국 청와대</p>
+                        <a href="https://i.postimg.cc/tpZdVk6n/image.jpg" class="more" target="_blank"><i class="fas fa-plus-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -152,15 +169,15 @@
     </aside>
     <aside id="side-menu">
         <ul class="dep">
-            <li><a href="">INTRO</a></li>
+            <li><a href="intro.html">INTRO</a></li>
             <li><a href="works.html">WORKS</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="cont.html">CONTACT</a></li>
         </ul>
-        <button type="button" id="menu_bt">
-            <i class="fas fa-angle-right"></i>
-        </button>
     </aside>
+    <button type="button" id="menu_bt">
+        <i class="fas fa-angle-right"></i>
+    </button>
     <aside class="side" id="right">
         <div class="cont copy">Copyright. 2018. Gwon Hye Seon. All rights reserved.</div>
     </aside>

@@ -1,0 +1,61 @@
+@charset "utf-8";
+/*            svg애니메이션             */
+#canvas {
+    position: absolute;
+    bottom: 18%;
+    width: 100%;
+}
+/*          캔버스 다음 부모       */
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.single-chart {
+  width: 20%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 50%;
+  max-height: 250px;
+}
+
+/*    써클 배경 (그레이 부분)     */
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 4;
+}
+
+/*    써클 개인 설정 및 애니메이션 설정     */
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 2s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+
+/*    가운데 퍼센테이지 하단 부가 설명    */
+.percentage {
+  fill: #93A2AC;
+  font-family: 'Noto Sans KR' sans-serif;
+  font-size: 0.4rem;
+    font-weight: bold;
+  text-anchor: middle;
+}
+.single-chart span {
+    text-align: center;
+    color:#93A2AC;
+}

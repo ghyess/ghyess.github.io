@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi">
+    <!--    파비콘 세팅    -->
+    <link rel="icon" type="image/x-icon" href="./ico/favicon.ico" sizes="32x32">
 <!--    폰트어썸     -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 <!--    폰트/CSS    -->
@@ -11,16 +13,27 @@
     <link rel="stylesheet" href="deafult.css" type="text/css">
     <link rel="stylesheet" href="hd.css" type="text/css">
     <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="page.css" type="text/css">
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
 <!--    스크립트     -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="main.js" type="text/jscript"></script>
     <script src="menu.js" type="text/jscript"></script>
+    <script src="loding.js" type="text/jscript"></script>
 </head>
 <body>
+  <div class="loader-moving">
+      <span class="left"></span>
+      <span class="right"></span>
+  </div>
    <div class="wrap">
     <header id="hd">
         <div class="logo">
-            <a href="index.html"><img src="http://placehold.it/100x100/333/fff" alt=""></a>
+            <a href="index.html"><img src="./ico/logo.svg" alt=""></a>
         </div>
         <nav id="gnb">
             <ul class="menu">
@@ -57,10 +70,10 @@
         </section>
         <section class="project" id="pro2">
             <div class="pro-img">
-                <div class="img-inner"><img src="./img/main2_01.jpg" alt=""></div>
-                <div class="img-inner"><img src="./img/main2_02.jpg" alt=""></div>
-                <div class="img-inner"><img src="./img/main2_03.jpg" alt=""></div>
-                <div class="img-inner"><img src="./img/main2_04.jpg" alt=""></div>
+                <div class="img-inner item1"></div>
+                <div class="img-inner item2"></div>
+                <div class="img-inner item3"></div>
+                <div class="img-inner item4"></div>
             </div>
             <div class="frame">
                 <div class="count">
@@ -82,9 +95,9 @@
         </section>
         <section class="project" id="pro3">
             <div class="pro-img">
-                <div class="img-inner"><img src="./img/main3_01.jpg" alt=""></div>
-                <div class="img-inner"><img src="./img/main3_02.jpg" alt=""></div>
-                <div class="img-inner"><img src="./img/main3_03.jpg" alt=""></div>
+                <div class="img-inner item1"></div>
+                <div class="img-inner item2"></div>
+                <div class="img-inner item3"></div>
             </div>
             <div class="frame">
                 <div class="count">
@@ -137,10 +150,10 @@
             <li><a href="portfolio.html">PORTFOLIO</a></li>
             <li><a href="cont.html">CONTACT</a></li>
         </ul>
-        <button type="button" id="menu_bt">
-            <i class="fas fa-angle-right"></i>
-        </button>
     </aside>
+    <button type="button" id="menu_bt">
+        <i class="fas fa-angle-right"></i>
+    </button>
     <aside class="side" id="right">
         <div class="cont copy">Copyright. 2018. Gwon Hye Seon. All rights reserved.</div>
     </aside>

@@ -1,6 +1,7 @@
 @charset "utf-8";
 #main {
     width: calc(100% - 200px);
+    height: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -10,18 +11,6 @@
     position: relative;
     clear: both;
     overflow: hidden;
-}
-
-/*    이미지    */
-.pro-img {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    width: 1080px;
-    left: 34%;
-}
-.pro-img .img-inner {
-    float: left;
 }
 
 /*    텍스트    */
@@ -113,46 +102,41 @@
     color: #01DFD7;
 }
 
+/*    이미지    */
+.pro-img {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 1080px;
+    left: 34%;
+}
+.pro-img .img-inner {
+    float: left;
+}
+
 /*    이미지 호버    */
 #pro2 .img-inner {
-    overflow: hidden;
-/*    transition: .8s;*/
-    width: 270px;
+    transition: .6s;
+    width: 25%;
     height: 100%;
-/*    position: absolute;*/
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
 }
-#pro2 img {
-    width: auto;
-    height: 100%;
-    transition: .8s;
-}
-/*
-#pro2 .img-inner:hover {
-    width: 30%;
-}
-#pro2 .img-inner:hover img {
-    transform: scale(1.2);
-    width: auto;
-    height: 100%;
-}*/
-
+#pro2 .img-inner.item1 { background-image: url(./img/main2_01.jpg); }
+#pro2 .img-inner.item2 { background-image: url(./img/main2_02.jpg); }
+#pro2 .img-inner.item3 { background-image: url(./img/main2_03.jpg); }
+#pro2 .img-inner.item4 { background-image: url(./img/main2_04.jpg); }
 
 #pro3 .img-inner {
-    overflow: hidden;
-/*    transition: .8s;*/
-    width: 360px;
-}
-#pro3 img {
-    width: auto;
+    transition: .6s;
+    width: 33.3333%;
     height: 100%;
-    transition: .8s;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
 }
-/*
-#pro3 .img-inner:hover {
-    width: 30%;
-}
-#pro3 .img-inner:hover img {
-    transform: scale(1.2);
-    width: auto;
-    height: 100%;
-}*/
+
+#pro3 .img-inner.item1 { background-image: url(./img/main3_01.jpg); }
+#pro3 .img-inner.item2 { background-image: url(./img/main3_02.jpg); }
+#pro3 .img-inner.item3 { background-image: url(./img/main3_03.jpg); }

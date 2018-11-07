@@ -16,7 +16,17 @@
     width: 33.333%;
     height: 810px;
     float: left;
+    position: relative;
     overflow: hidden;
+}
+#main .mainTit {
+    position: absolute;
+    top: 40%;
+    left: calc(calc(100% - 660px) / 2);
+    font-size: 4.5rem;
+    color: #fff;
+    text-shadow: 5px 0 10px #2e2e2e;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 /*    좌우 버튼    */

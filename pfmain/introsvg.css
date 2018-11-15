@@ -2,14 +2,14 @@
 /*            svg애니메이션             */
 #canvas {
     position: absolute;
-    bottom: 18%;
+    bottom: 15%;
     width: 100%;
 }
 /*          캔버스 다음 부모       */
 .flex-wrapper {
   display: flex;
   flex-flow: row nowrap;
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
 }
 

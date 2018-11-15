@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*****************************************************/
+/*                                          포폴 메인                                           */
+@media screen and (max-width:767px) {
+    .loader-moving, #hd, .side, #side-menu, #menu_bt {
+        display: none;
+    }
+    #main {
+        width: 100%;
+    }
+    .pro-img {
+        width: 50%;
+        left: 50%;
+    }
+    .pro-img img {
+        width: auto;
+        height: 100%;
+    }
+    .frame .count {
+        width: auto;
+    }
+    .frame .count .number {
+        font-size: 5rem;
+    }
+}

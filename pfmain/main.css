@@ -31,7 +31,8 @@
 }
 .frame .count span {
     display: inline-block;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 .frame .count .number {
     font-size: 8.75rem;
